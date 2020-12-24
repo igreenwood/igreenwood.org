@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Crimson+Text&family=Libre+Baskerville&family=Noto+Serif+JP:wght@300&display=swap');
+
 html,
 body {
     padding: 0;
     margin: 0;
-    line-height: 1.6;
     font-size: 20px;
-    font-family: 'Karma', serif;
+    /* font-family: 'Cormorant', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Serif JP', serif; */
+    font-family: 'Crimson Text', serif, 'Noto Serif JP', serif;
 }
 
 nav {
@@ -18,12 +23,13 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
     font-size: 1rem;
     font-weight: 400;
 }
 
 a {
-    color: black;
+    color: #1C1C1C;
     background: transparent;
     text-decoration: none;
     transition: all .2s linear;
@@ -31,6 +37,6 @@ a {
 
 a:hover {
     color: white;
-    background: black;
+    background: #58B2DC;
     text-decoration: none;
 }

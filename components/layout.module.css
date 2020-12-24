@@ -4,11 +4,11 @@
 
 .toolbar {
     flex-wrap: wrap;
-    font-size: 1.25rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    vertical-align: baseline;
+    text-align: baseline;
 }
 
 .toolbar ul {
@@ -16,12 +16,16 @@
     list-style: none;
 }
 
-.toolbar a {
+.toolbar nav a {
     font-size: 1rem;
-    margin: .5rem;
+    margin: 0 .5rem;
 }
 
 .toolbarTitle {
     font-size: 1rem;
 }
 
+.footer {
+    text-align: center;
+    font-size: .8rem;
+}

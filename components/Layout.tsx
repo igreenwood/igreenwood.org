@@ -16,9 +16,6 @@ export default function Layout({ children, title = '' }: Props) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap" rel="stylesheet"/>
       </Head>
       <header>
         <div className = { styles.toolbar }>
@@ -27,12 +24,12 @@ export default function Layout({ children, title = '' }: Props) {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Works</a>
+                  <a>Projects</a>
                 </Link>
               </li>
               <li>
                 <Link href="/bio">
-                  <a>Bio</a>
+                  <a>Info</a>
                 </Link>
               </li>
               <li>
@@ -45,9 +42,9 @@ export default function Layout({ children, title = '' }: Props) {
         </div>
       </header>
       {children}
-      <footer>
+      <footer className={ styles.footer }>
         <hr />
-        <span>I'm here to stay (Footer)</span>
+        <span>©︎ igreenwood</span>
       </footer>
     </div>
   )
