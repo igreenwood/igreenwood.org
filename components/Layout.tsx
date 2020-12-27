@@ -1,14 +1,14 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from './Layout.module.css'
 
 type Props = {
   children?: ReactNode
   title?: string
 }
 
-export default function Layout({ children, title = '' }: Props) {
+export default function Layout({ children, title = 'igreenwood' }: Props) {
   return (
     <div className= { styles.container }>
       <Head>
@@ -28,7 +28,7 @@ export default function Layout({ children, title = '' }: Props) {
                 </Link>
               </li>
               <li>
-                <Link href="/bio">
+                <Link href="/info">
                   <a>Info</a>
                 </Link>
               </li>
@@ -41,7 +41,9 @@ export default function Layout({ children, title = '' }: Props) {
           </nav>
         </div>
       </header>
-      {children}
+      <main>
+        {children}
+      </main>
       <footer className={ styles.footer }>
         <hr />
         <span>©︎ igreenwood</span>
