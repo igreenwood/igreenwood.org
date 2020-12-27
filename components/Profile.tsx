@@ -10,7 +10,7 @@ export default function Profile(){
             <section className={ styles.container }>
                 <h2>
                     <div className={ styles.title }>
-                        Issei Aoki is a <br/>Tokyo based software engineer.
+                        <span className={ styles.name } >Issei Aoki</span> is a <br/>Tokyo based software engineer.
                     </div>
                     <div className={ styles.description }>
                         Having backgrounds in media arts, he works as s software engineer to development for launching new businesses.

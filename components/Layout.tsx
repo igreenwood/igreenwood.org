@@ -8,7 +8,7 @@ type Props = {
   title?: string
 }
 
-export default function Layout({ children, title = 'igreenwood' }: Props) {
+export default function Layout({ children, title = 'igreenwood.com' }: Props) {
   return (
     <div className= { styles.container }>
       <Head>
@@ -16,6 +16,31 @@ export default function Layout({ children, title = 'igreenwood' }: Props) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+
+        <link rel="preload" href="/fonts/Weekly/Weekly-Thin.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-UltraLight.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-Light.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-Regular.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-Medium.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-SemiBold.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/Weekly/Weekly-Bold.ttf" as="font" crossOrigin=""/>
+
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Thin.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-UltraLight.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Light.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Regular.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Medium.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-SemiBold.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf" as="font" crossOrigin=""/>
+
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-Thin.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-UltraLight.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-Light.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-Regular.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-Medium.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-SemiBold.ttf" as="font" crossOrigin=""/>
+        <link rel="preload" href="/fonts/WeeklyPro/WeeklyPro-Bold.ttf" as="font" crossOrigin=""/>
+
       </Head>
       <header>
         <div className = { styles.toolbar }>
@@ -46,7 +71,9 @@ export default function Layout({ children, title = 'igreenwood' }: Props) {
       </main>
       <footer className={ styles.footer }>
         <hr />
-        <span>©︎ igreenwood</span>
+        <div className={ styles.rights }>
+          <span>©︎ 2020 igreenwood</span>
+        </div>
       </footer>
     </div>
   )

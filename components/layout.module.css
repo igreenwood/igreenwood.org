@@ -1,13 +1,13 @@
 .container {
     margin: 0rem 0rem;
+    background-color: #FFFFFB;
 }
 
 .toolbar {
     flex-wrap: wrap;
-    font-size: 1rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     text-align: baseline;
 }
 
@@ -17,15 +17,25 @@
 }
 
 .toolbar nav a {
-    font-size: 1rem;
-    margin: 0 .5rem;
+    font-family: "Weekly";
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin: 0 1rem;
 }
 
-.toolbarTitle {
-    font-size: 1rem;
+.toolbarTitle a{
+    font-family: "WeeklyPro";
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .footer {
-    text-align: center;
-    font-size: .8rem;
+    text-align: end;
+}
+
+.rights {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
 }

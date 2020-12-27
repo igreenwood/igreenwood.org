@@ -1,15 +1,184 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Crimson+Text&family=Libre+Baskerville&family=Noto+Serif+JP:wght@300&display=swap');
 
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-UltraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Weekly";
+    src: url("/fonts/Weekly/Weekly-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-UltraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyAlt";
+    src: url("/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-UltraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WeeklyPro";
+    src: url("/fonts/WeeklyPro/WeeklyPro-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 10px;
     /* font-family: 'Cormorant', serif;
     font-family: 'Crimson Text', serif;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Noto Serif JP', serif; */
-    font-family: 'Crimson Text', serif, 'Noto Serif JP', serif;
+    font-family: 'WeeklyAlt';
+    font-weight: 300;
 }
 
 nav {
@@ -33,10 +202,11 @@ a {
     background: transparent;
     text-decoration: none;
     transition: all .2s linear;
+    font-weight: 200;
 }
 
 a:hover {
-    color: white;
-    background: #58B2DC;
+    color: #FFFFFB;
+    background: #BDC0BA;
     text-decoration: none;
 }
