@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     text-align: baseline;
 }
 
@@ -19,14 +19,14 @@
 .toolbar nav a {
     font-family: "Weekly";
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin: 0 1rem;
 }
 
 .toolbarTitle a{
     font-family: "WeeklyPro";
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -36,6 +36,6 @@
 
 .rights {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: .5rem;
     font-weight: 300;
 }

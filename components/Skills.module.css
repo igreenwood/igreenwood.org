@@ -1,0 +1,15 @@
+.container {
+    margin-top: 3rem;
+}
+
+.title {
+    font-family: "WeeklyAlt";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}

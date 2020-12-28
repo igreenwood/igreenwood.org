@@ -10,9 +10,9 @@
 }
 
 .title {
-    font-size: 4.1rem;
+    font-size: 2rem;
     text-align: start;
-    line-height: 120%;
+    line-height: 140%;
     font-weight: 400;
 }
 
@@ -20,14 +20,14 @@
     color: #FFFFFB;
     background: #BDC0BA;
     text-decoration: none;
-    padding: .5rem;
+    padding: .2rem;
 }
 
 .description {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-align: start;
-    line-height: 160%;
+    line-height: 180%;
     font-weight: 300;
 }
