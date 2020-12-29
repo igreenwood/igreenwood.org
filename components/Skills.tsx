@@ -42,8 +42,8 @@ export default function Skills(){
         { name: "Sound Programing", category: "programming" },
     ]
 
-    const cardStyle = { flex: "0 1 30%", marginRight: "1rem", marginTop: "1rem" }
-    const chipStyle = {color: "#FFFFFB", backgroundColor: "#BDC0BA", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".6rem", marginRight: ".2rem"}
+    const cardStyle = { flex: "0 1 40%", marginRight: "1rem", marginTop: "1rem" }
+    const chipStyle = {color: "#FFFFFB", backgroundColor: "#BDC0BA", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".75rem", margin: ".1rem .2rem .1rem 0"}
 
     return <section className={ styles.container }>
             <h2 className={ styles.title }>Skills</h2>

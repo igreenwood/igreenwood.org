@@ -14,14 +14,14 @@ type Props = {
 
 const useStyles = makeStyles({
     root: {
-        minWidth: "360px",
-        height: "360px"
+        minWidth: "320px",
+        height: "320px"
     },
 });
 
 export default function ImageCard({ children, image, title, style }: Props) {
     const classes = useStyles();
-    const cardTitleStyle = {color: "#1C1C1C", backgroundColor: "#FFFFFB", fontFamily: "WeeklyAlt", fontWeight: 500, fontSize: "1.2rem"}
+    const cardTitleStyle = {color: "#1C1C1C", backgroundColor: "#FFFFFB", fontFamily: "WeeklyAlt", fontWeight: 500, fontSize: "1.25rem"}
     return <Card className={ classes.root } style={ style }>
     <CardMedia
         component="img"
