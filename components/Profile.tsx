@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from './Profile.module.css'
 import Skills from './Skills'
+import Contact from './Contact'
 
 export default function Profile(){
+    const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
+
     return <>
         <figure>
             <img src="/images/cover3.jpg" className={ styles.coverImage }/>
@@ -22,6 +25,13 @@ export default function Profile(){
                 </section>
                 
                 <Skills/>
+
+                <Contact
+                    githubUrl={ contact.githubUrl }
+                    twitterUrl={ contact.twitterUrl }
+                    linkedInUrl={ contact.linkedInUrl }
+                    email={ contact.email }
+                />
             </div>
         </article>
         

@@ -43,7 +43,7 @@ export default function Skills(){
     ]
 
     const cardStyle = { flex: "0 1 40%", marginRight: "1rem", marginTop: "1rem" }
-    const chipStyle = {color: "#FFFFFB", backgroundColor: "#BDC0BA", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".75rem", margin: ".1rem .2rem .1rem 0"}
+    const chipStyle = { color: "#FFFFFB", backgroundColor: "#BDC0BA", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".75rem", margin: ".1rem .2rem .1rem 0" }
 
     return <section className={ styles.container }>
             <h2 className={ styles.title }>Skills</h2>
