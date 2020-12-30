@@ -1,0 +1,40 @@
+.date{
+    font-family: "Weekly";
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: start;
+}
+
+.title{
+    font-family: "WeeklyAlt";
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.description{
+    font-family: "WeeklyAlt";
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: start;
+}
+
+@media ( min-width: 560px ) {
+    .container{
+        overflow: hidden;
+        margin:  0;
+        position: relative;
+    }
+    
+    .date{
+        width: 120px;
+        float: left;
+    }
+    
+    .content{
+        width: 70%;
+        float: left;
+        border-left: 3px #BDC0BA solid;
+        padding-left:  30px;
+    }
+}

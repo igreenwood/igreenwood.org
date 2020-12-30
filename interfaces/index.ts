@@ -8,3 +8,9 @@ export type User = {
   id: number
   name: string
 }
+export type Timeline = {
+  id: number
+  date: string
+  title: string
+  description: string
+}

@@ -1,0 +1,13 @@
+.list{
+    list-style: none; 
+}
+
+.list >  li {
+    margin-bottom: .5rem;
+}
+
+@media ( min-width: 560px ){
+    .list > li {
+        margin: 0;
+    }
+}
