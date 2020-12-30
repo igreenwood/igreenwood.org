@@ -9,6 +9,8 @@ type Props = {
 export default function Awards({ items }: Props) {
     return <section>
         <h2 className={ styles.title }>Awards</h2>
-        <TimelineList items={ items }/>
+        <div className={ styles.container} >
+            <TimelineList items={ items }/>
+        </div>
     </section>
 }

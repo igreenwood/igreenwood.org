@@ -1,4 +1,4 @@
-import styles from './TimelineGroup.module.css'
+import styles from './TimelineItem.module.css'
 import { Timeline } from '../interfaces'
 
 export default function TimelineItem({ id, date, title, description="" }: Timeline) {
