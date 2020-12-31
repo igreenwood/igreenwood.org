@@ -1,5 +1,5 @@
 .container{
-    margin-top: 1rem;
+    margin: 0;
 }
 
 .date{
@@ -10,6 +10,7 @@
 }
 
 .hidden{
+    display: none;
     visibility: hidden;
 }
 
@@ -26,19 +27,25 @@
     font-weight: 300;
     font-size: 1rem;
     text-align: start;
-    line-height: 160%;
+    line-height: 180%;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
 }
 
 @media ( min-width: 560px ) {
     .container{
         overflow: hidden;
-        margin:  0;
         position: relative;
     }
     
     .date{
         width: 60px;
         float: left;
+    }
+
+    .hidden{
+        display: block;
+        visibility: hidden;
     }
     
     .content{

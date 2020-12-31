@@ -8,7 +8,9 @@ type Props = {
 
 export default function Education({ items }: Props) {
     return <section>
-        <h2 className={ styles.title }>Awards</h2>
-        <TimelineList items={ items }/>
+        <h2 className={ styles.title }>Education</h2>
+        <div className={ styles.container} >
+            <TimelineList items={ items }/>
+        </div>
     </section>
 }

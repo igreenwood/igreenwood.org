@@ -37,8 +37,7 @@ export default function Skills(){
         { name: "CSS", category: "programming" },
         { name: "GLSL", category: "programming" },
         { name: "C++", category: "programming" },
-        { name: "Sound Design", category: "other" },
-        { name: "Digital Audio Edit", category: "other" },
+        { name: "Audio Engineering", category: "other" },
         { name: "Sound Programing", category: "programming" },
     ]
 
