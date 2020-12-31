@@ -6,16 +6,8 @@ type Props = {
     items: Timeline[]
 }
 
-export default function TimelineList({ items = [{ id: 1, date: "2020", title: "", description: "" }] }: Props) {
-    // let lastDate = ""
-    // for(const item of items) {
-    //     if(item.date == lastDate){
-            
-    //     } else {
-    //         lastDate = item.date
-    //     }
-    // }
+export default function TimelineList({ items = [{ id: 1, date: "2020", title: "title", description: "description", hideDate: false }] }: Props) {
     return <ul className={ styles.list }>
-        { items.map((item: Timeline) => <li key={ item.id }><TimelineItem id={ item.id } date={ item.date } title={item.title} description={ item.description } /></li>) }
+        { items.map((item: Timeline) => <li key={ item.id }><TimelineItem id={ item.id } date={ item.date } title={item.title} description={ item.description } hideDate={ item.hideDate } /></li>) }
     </ul>
 }

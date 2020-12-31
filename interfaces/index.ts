@@ -13,4 +13,5 @@ export type Timeline = {
   date: string
   title: string
   description: string
+  hideDate: boolean
 }

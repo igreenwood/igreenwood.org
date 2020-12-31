@@ -1,9 +1,18 @@
 import styles from './TimelineItem.module.css'
 import { Timeline } from '../interfaces'
 
-export default function TimelineItem({ id, date, title, description="" }: Timeline) {
+export default function TimelineItem({ id, date, title, description="", hideDate=false }: Timeline) {
+
+    let dateClassName: string
+    
+    if(hideDate){
+        dateClassName = `${ styles.date } ${styles.hidden }`
+    } else {
+        dateClassName = styles.date
+    }
+
     return <section className={ styles.container }>
-        <p className={ styles.date }>
+        <p className={ dateClassName }>
             { date }
         </p>
         <div className={ styles.content }>

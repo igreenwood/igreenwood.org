@@ -9,6 +9,10 @@
     text-align: start;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .title{
     font-family: "WeeklyAlt";
     font-weight: 400;

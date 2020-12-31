@@ -8,8 +8,8 @@ import Contact from './Contact'
 export default function Profile(){
     const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
     const awardItems: Timeline[] = [ 
-        { id: 1, date: "2011", title: "BACA-JA 2011 Network Art Category, Grand Prix", description: "oscillators" },
-        { id: 2, date: "2011", title: "Asiia Digital Art Award", description: "oscillators" }
+        { id: 1, date: "2011", title: "BACA-JA 2011 Network Art Category, Grand Prix", description: "oscillators", hideDate: false },
+        { id: 2, date: "2011", title: "Asiia Digital Art Award", description: "oscillators", hideDate: true }
     ]
     return <>
         <figure>
