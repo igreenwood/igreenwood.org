@@ -27,7 +27,7 @@ export default function ImageCard({ children, image, title, style }: Props) {
         component="img"
         alt="Skill Card"
         image={ image }
-        style={{ height: "144px" }}
+        style={{ height: "140px" }}
     />
     <CardContent>
         <Typography gutterBottom variant="h5" component="h3" style={ cardTitleStyle }>

@@ -5,11 +5,20 @@ import Skills from './Skills'
 import Awards from './Awards'
 import Education from './Education'
 import Contact from './Contact'
+import Careers from './Careers'
 
 export default function Profile(){
     const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
+    const careersItems: Timeline[] = [ 
+        { id: 1, date: "2018-Now", title: "Android Developer @Lang-8.inc", description: "Android: migration async processing from RxJava to Kotlin, migration from Camera to Camera2, migration billing framework from AIDL to Google Play Billing Library, migration CSS WebViews to native Views, and all", hideDate: false },
+        { id: 2, date: "2016-2018", title: "Android Developer @FUN UP INC. as Freelance", description: "Android: full porting of iOS App(with Sprite Kit) to Android App(with libGDX)", hideDate: false },
+        { id: 3, date: "2016-2017", title: "Frontend Developer, Backend Developer, Designer as Freelance", description: "Javascript: implementing service lp page/ Ruby on Rails: implementing service api/ Design: Create lp page icons", hideDate: false },
+        { id: 4, date: "2015-2017", title: "Android Developer @umeebe Inc. as Freelance", description: "Android: implementing interactive photo map, implementing interactive graph view and many complex custom views", hideDate: false },
+        { id: 5, date: "2013-2016", title: "Android Developer, iOS Developer @OUTSOURCING TECHNOLOGY Inc.", description: "Android: implementing graph views for slot machine, implementing photo editing app from scratch, implementing calendar sharing app from scratch/ iOS: porting calendar sharing app", hideDate: false },
+        { id: 6, date: "2012-2013", title: "Unity Developer, Android Developer @C.A.Mobile,Ltd.", description: "Unity: implementing visual music sequencer app/ Android: implementing multiple translation joke app", hideDate: false }
+    ]
     const awardItems: Timeline[] = [ 
-        { id: 1, date: "2012", title: "Grand Prix in BACA-JA 2011 Network Art Category", description: "oscillators", hideDate: false },
+        { id: 1, date: "2011", title: "Grand Prix in BACA-JA 2011 Network Art Category", description: "oscillators", hideDate: false },
         { id: 2, date: "2011", title: "Prize in Asia Digital Art Award", description: "oscillators", hideDate: true }
     ]
     const educationItems: Timeline[] = [ 
@@ -35,6 +44,8 @@ export default function Profile(){
                 </section>
                 
                 <Skills/>
+
+                <Careers items={ careersItems }/>
 
                 <Awards items={ awardItems }/>
 
