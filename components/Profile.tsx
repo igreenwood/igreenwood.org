@@ -22,8 +22,8 @@ export default function Profile(){
         { id: 2, date: "2011", title: "Prize in Asia Digital Art Award", description: "oscillators", hideDate: true }
     ]
     const educationItems: Timeline[] = [ 
-        { id: 1, date: "2012", title: "Master of Content Creative Design, Kyushu University, Graduate School of Design", description: "Java, Processing, openFrameworks, Sound Design, Sound Programming(Max/MSP, Reactor, SuperCollider)", hideDate: false },
-        { id: 2, date: "2010", title: "Bachelor of Visual Communication Design, Kyushu University", description: "Graphic Design(Adobe Illustrator, Adobe Photoshop, Adobe InDesign), Image Processing(C), Computer Graphihcs, Computer Vision, Video Editing(Adobe Premire), Audio Engineering(Logic Pro, ProTools, Adobe Audition)", hideDate: false }
+        { id: 1, date: "2010-2012", title: "Master of Content Creative Design, Kyushu University, Graduate School of Design", description: "Java, Processing, openFrameworks, Sound Design, Sound Programming(Max/MSP, Reactor, SuperCollider)", hideDate: false },
+        { id: 2, date: "2006-2010", title: "Bachelor of Visual Communication Design, Kyushu University", description: "Graphic Design(Adobe Illustrator, Adobe Photoshop, Adobe InDesign), Image Processing(C), Computer Graphihcs, Computer Vision, Video Editing(Adobe Premire), Audio Engineering(Logic Pro, ProTools, Adobe Audition)", hideDate: false }
     ]
     return <>
         <figure>
