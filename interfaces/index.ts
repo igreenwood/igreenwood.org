@@ -15,3 +15,16 @@ export type Timeline = {
   description: string
   hideDate: boolean
 }
+
+export type Genre = "Android Application" | "iOS Application" | "Android OSS Library" | "Writing" | "Website"
+
+export type Project = {
+  id: number
+  date: string
+  title: string
+  description: string
+  genre: Genre
+  part: string
+  coverImageUrl: string
+  videoUrl?: string
+}
