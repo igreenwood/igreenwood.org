@@ -11,7 +11,7 @@ export default function Projects({ projects }: Props) {
     let classNameString: string = styles.item
     let items = projects.map((project: Project) => 
         {
-            if(project.genre == "Android OSS Library"){
+            if(project.genre != "Writing"){
                 classNameString = `${ styles.item } ${ styles.largeGrid }`
             } else {
                 classNameString = styles.item
