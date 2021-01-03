@@ -7,7 +7,7 @@ type Props = {
 }
 
 export default function ProjectItem({ project }: Props) {
-    return <Link href="/projects/[id]" as={ `/projects/${project.id}` }>
+    return <Link href="/projects/[id]" as={ `/projects/${project.name}` }>
         <a className={ styles.touchHandler }>
             <div className={ styles.fixedRatioWrapper }>
                 <section className={ styles.container }>

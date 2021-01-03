@@ -20,6 +20,7 @@ export type Genre = "Android Application" | "iOS Application" | "Android OSS Lib
 
 export type Project = {
   id: number
+  name: string
   date: string
   title: string
   description: string
