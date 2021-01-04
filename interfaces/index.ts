@@ -29,3 +29,11 @@ export type Project = {
   coverImageUrl: string
   videoUrl?: string
 }
+
+export type PostData = { 
+  id: string
+  title: string
+  date: string
+  tags: string
+  markdownText:string
+}

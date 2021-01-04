@@ -12,9 +12,7 @@ export default function ProjectPage({ project, errors }: Props) {
     if (errors) {
         return (
             <Layout>
-                <p>
-                    { errors }
-                </p>
+                <p>{ errors }</p>
             </Layout>
         )
     }

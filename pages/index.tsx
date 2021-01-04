@@ -9,9 +9,7 @@ type Props = {
 
 export default function ProjectsPage({ projects }: Props) {
   return <Layout>
-    <main>
-      <Projects projects={ projects }/>
-    </main>
+    <Projects projects={ projects }/>
   </Layout>
 }
 

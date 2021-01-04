@@ -26,13 +26,13 @@ export default function Profile(){
         { id: 2, date: "2006-2010", title: "Bachelor of Visual Communication Design, Kyushu University", description: "Graphic Design(Adobe Illustrator, Adobe Photoshop, Adobe InDesign), Image Processing(C), Computer Graphihcs, Computer Vision, Video Editing(Adobe Premire), Audio Engineering(Logic Pro, ProTools, Adobe Audition)", hideDate: false }
     ]
     return <>
-        <figure>
-            <img src="/images/cover3.jpg" className={ styles.coverImage }/>
-        </figure>
         <article>
+            <figure>
+                <img src="/images/cover3.jpg" className={ styles.coverImage }/>
+            </figure>
             <div className={ styles.container }>
                 <section>
-                    <h2>
+                    <h1>
                         <div className={ styles.title }>
                             <span className={ styles.name } >Issei Aoki</span> is a <br/>Tokyo based software engineer.
                         </div>
@@ -40,7 +40,7 @@ export default function Profile(){
                             Having backgrounds in media arts, he works as s software engineer to development for launching new businesses.
                             His greatest strength is his ability for visual programing and UI animations.
                         </div>
-                    </h2>
+                    </h1>
                 </section>
                 
                 <Skills/>
