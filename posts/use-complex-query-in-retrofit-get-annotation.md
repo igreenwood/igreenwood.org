@@ -3,7 +3,6 @@ title: 'Retrofitの@GETで複雑なクエリを投げる'
 date: '20151228'
 tags: 'Android'
 ---
-# Retrofit超便利！！
 Retrofit最近流行ってますね。
 
 RetrofitはRxJavaと連携できてスマートに通信処理を記述できるので非常に便利です。
@@ -56,7 +55,6 @@ Response<MyResponse> response = service.getWithComplexQuery("").execute();
 ## まとめ
 `baseUrl` を動的に生成するのはあまり美しくない気がしますが、現状これ以外の方法を見つけられませんでした。
 これ以外の方法をご存じの方がいらっしゃいましたらぜひ教えて下さい。
-
 
 ## 参考URL
 https://github.com/square/retrofit/issues/1324

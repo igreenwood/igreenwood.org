@@ -1,4 +1,9 @@
 .container{
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'WeeklyAlt';
+    line-height: 180%;
+
     a {
         color: #1C1C1C;
         background: transparent;
@@ -32,23 +37,29 @@
     }
 
     h2 {
+        font-family: 'WeeklyPro';
         font-size: 2.1rem;
         text-align: start;
         line-height: 140%;
-        font-weight: 400;
+        font-weight: 600;
         color: #1C1C1C;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: .8rem;
+        border-bottom: thin solid #BDC0BA;
     }
 
     h3 {
+        font-family: 'WeeklyPro';
         font-size: 1.25rem;
         text-align: start;
         line-height: 160%;
-        font-weight: 400;
+        font-weight: 700;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     img {
-        width: 100%;
-        display: flex;
-        object-fit: cover;
+        width: 30%;
     }
 }

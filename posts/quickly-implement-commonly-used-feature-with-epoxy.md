@@ -7,7 +7,7 @@ tags: 'Android Kotlin'
 
 今回Epoxyを使ってEmptyView、ヘッダー、フッターを使った簡単なサンプルを作成したので、その実装方法を説明しながら、Epoxyの基本的な使い方を紹介します。
 
-# サンプルコード
+## サンプルコード
 今回の内容のサンプルコードはこちらになります。（Kotlinです）
 https://github.com/IsseiAoki/epoxy-sample
 
@@ -21,8 +21,7 @@ https://github.com/IsseiAoki/epoxy-sample
 * アイテムが無い時はEmptyViewを表示する
 * 一番下までスクロールすると、ProgressBar付きのフッターを表示する
 
-# 実装
-## 基本的な流れ
+## 実装の基本的な流れ
 Epoxyを使った場合の実装の基本的な流れは以下になります。
 
 * build.gradleにEpoxyを追加
@@ -694,15 +693,15 @@ class MainActivity : AppCompatActivity() {
 いつもの `setAdapter()` としている所を `setController()` に変更するだけです。
 データの更新を行いたい時は、Controllerに用意したメソッド達を呼んであげましょう。
 
-# まとめ
+## まとめ
 RecyclerViewをそのまま使おうとすると、自分で実装しなければいけないことが数多くあり、割とハードです。
 Epoxyを導入することでボイラープレートコードを減らして幸せになりましょう！
 
 ここは間違ってるよとか、これはこっちの方が良いよとかありましたら教えてください！
 
-# 注意点
+## 注意点
 サンプルを作っている時に気づいたのですが、 `Carousel` のアイテムに `onMeasure`でViewのサイズを変更しているカスタムビューを使用すると（今回のサンプルではViewのアスペクト比が一定になるImageViewを使ってます）、 `setNumViewsToShowOnScreen()` がうまく動かなくてハマったのでCarouselの使用は少し注意が必要だと感じました。
 
-# 参考資料
+## 参考資料
 https://github.com/airbnb/epoxy/wiki
 

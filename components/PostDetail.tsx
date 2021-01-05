@@ -32,9 +32,10 @@ export default function PostDetail({ postData }: Props){
                 </div>
             </figure>
             <Container>
-                <Date dateString={ postData.date }/>
-                <h1>{ postData.title }</h1>
-                <span>{ postData.tags }</span>
+                <h1 className={styles.title}>{ postData.title }</h1>
+                <div className={styles.attributes}>
+                    <span><Date dateString={ postData.date }/></span><span className={styles.tags}>CATEGORY: { postData.tags }</span>
+                </div>
                 <div className={markdownStyles.container}>
                     <ReactMarkdown source={postData.markdownText} renderers={{code: Renderer}}/>
                 </div>
