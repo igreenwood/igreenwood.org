@@ -37,3 +37,15 @@ export type PostData = {
   tags: string
   markdownText:string
 }
+
+export type SkillCategory = "programming" | "design" | "other"
+
+export type Skill = {
+  name: string
+  category: SkillCategory
+}
+
+export type SkillData = {
+  mainSkills: Skill[]
+  subSkills: Skill[]
+}

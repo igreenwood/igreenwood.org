@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Profile.module.css'
-import { Timeline } from '../interfaces'
+import { SkillData, Timeline, Skill } from '../interfaces'
 import Skills from './Skills'
 import Awards from './Awards'
 import Education from './Education'
@@ -10,6 +10,35 @@ import Container from './Container'
 import commonStyles from '../styles/utils.module.css'
 
 export default function Profile(){
+    const mainSkills: Skill[] = [
+        { name: "Android", category: "programming" },
+        { name: "Kotlin", category: "programming" },
+        { name: "Java", category: "programming" },
+        { name: "Swift", category: "programming" },
+        { name: "Objective-C", category: "programming" },
+        { name: "Processing", category: "programming" },
+        { name: "Graphic Design", category: "design" },
+        { name: "Illustrator", category: "design" },
+        { name: "Photoshop", category: "design" },
+        { name: "figma", category: "design" },
+        { name: "Image Processing", category: "other" },
+    ]
+
+    const subSkills: Skill[] = [
+        { name: "JavaScript", category: "programming" },
+        { name: "TypeScript", category: "programming" },
+        { name: "React.js", category: "programming" },
+        { name: "Next.js", category: "programming" },
+        { name: "Ruby on Rails", category: "programming" },
+        { name: "HTML", category: "programming" },
+        { name: "CSS", category: "programming" },
+        { name: "GLSL", category: "programming" },
+        { name: "C++", category: "programming" },
+        { name: "Audio Engineering", category: "other" },
+        { name: "Sound Programing", category: "programming" },
+    ]
+
+    const skillData: SkillData = { mainSkills: mainSkills, subSkills: subSkills}
     const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
     const careersItems: Timeline[] = [ 
         { id: 1, date: "2018-Now", title: "Android Developer @Lang-8.inc", description: "Android: migration async processing from RxJava to Kotlin, migration from Camera to Camera2, migration billing framework from AIDL to Google Play Billing Library, migration CSS WebViews to native Views, and all", hideDate: false },
@@ -45,7 +74,7 @@ export default function Profile(){
                         </h1>
                     </section>
                     
-                    <Skills/>
+                    <Skills skillData={skillData}/>
 
                     <Careers items={ careersItems }/>
 
