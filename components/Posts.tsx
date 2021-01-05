@@ -17,7 +17,7 @@ export default function Posts({ postsData }: Props) {
             <Container>
                 <h1 className={`${commonStyles.headingL} ${styles.title}`}>Posts</h1>
                     <ul className={styles.list}>
-                        { postsData.map((postData) => <PostItem postData={postData}/>) }
+                        { postsData.map((postData) => <li key={postData.id}><PostItem postData={postData}/></li>) }
                     </ul>
             </Container>
     </article>
