@@ -12,14 +12,14 @@ export default function PostItem({ postData }: Props){
     return <li>
             <article>
                 <section>
-                    <div className={styles.date}>
-                        <Date dateString={postData.date}/>
-                    </div>
-                    <h2 className={commonStyles.headingM}>
+                    <h2>
                         <Link href="/posts/[id]" as={ `/posts/${postData.id}` }>
-                            <a>{ postData.title }</a>
+                            <a className={commonStyles.headingM}>{ postData.title }</a>
                         </Link>
                     </h2>
+                    <div className={styles.attributes}>
+                        <span><Date dateString={ postData.date }/></span><span className={styles.tags}>CATEGORY: { postData.tags }</span>
+                    </div>
                 </section>
             </article>
         </li>

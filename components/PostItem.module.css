@@ -1,8 +1,13 @@
-.date{
-    margin-top: 2rem;
+.attributes {
+    display:block;
     color: #BDC0BA;
-    font-size: 1rem;
-    text-align: start;
-    line-height: 180%;
+    font-family: "WeeklyPro";
     font-weight: 700;
+    font-size: .8rem;
+    line-height: 160%;
+    margin-bottom: 2rem;
+}
+
+.tags {
+    margin-left: 1rem;
 }
