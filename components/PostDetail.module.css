@@ -1,0 +1,30 @@
+.fixedRatioWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fixedRatioWrapper::before {
+    content: "";
+    display: block;
+    padding-top: 12.5%;
+}
+
+.imageContainer {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.coverImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+    object-position: 0% 40%;
+    width: 100%;
+    height: 100%;
+}

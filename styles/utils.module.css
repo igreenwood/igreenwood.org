@@ -1,0 +1,35 @@
+.headingL {
+    font-size: 2.1rem;
+    text-align: start;
+    line-height: 140%;
+    font-weight: 400;
+    color: #1C1C1C;
+}
+
+.headingM{
+    font-size: 1.25rem;
+    text-align: start;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.text{
+    font-size: 1rem;
+    text-align: start;
+    line-height: 180%;
+    font-weight: 300;
+}
+
+.outerContainer{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.container{
+    max-width: 54rem;
+    margin: 3rem auto 2rem;
+}
+
+.topMarginedSection{
+    margin-top: 3rem;
+}

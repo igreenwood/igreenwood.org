@@ -1,12 +1,13 @@
 import { Project } from '../interfaces'
 import styles from './ProjectDetail.module.css'
+import Container from './Container'
 
 type Props = {
     project: Project
 }
 
 export default function ProjectDetail({ project }: Props) {
-    return <section>
+    return <article>
         <figure>
             <div className={ styles.fixedRatioWrapper }>
                 <div className={ styles.imageContainer }>
@@ -14,14 +15,14 @@ export default function ProjectDetail({ project }: Props) {
                 </div>
             </div>
         </figure>
-        <div className={ styles.container }>
-            <h2 className={ styles.title }>{ project.title }</h2>
-            <article>
+        <Container>
+            <section>
+                <h2 className={ styles.title }>{ project.title }</h2>
                 <div className={ styles.subtitleContainer }>
                     <span className={ styles.date }>DATE: { project.date }</span><span className={ styles.genre }>GENRE: { project.genre }</span>
                 </div>
                 <div className={ styles.description }>{ project.description }</div>
-            </article>
-        </div>
-    </section>
+            </section>
+        </Container>
+    </article>
 }

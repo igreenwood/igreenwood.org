@@ -19,7 +19,6 @@ export default function Skills(){
         { name: "Swift", category: "programming" },
         { name: "Objective-C", category: "programming" },
         { name: "Processing", category: "programming" },
-        { name: "openFrameworks", category: "programming" },
         { name: "Graphic Design", category: "design" },
         { name: "Illustrator", category: "design" },
         { name: "Photoshop", category: "design" },
@@ -42,16 +41,16 @@ export default function Skills(){
     ]
 
     const cardStyle = { flex: "0 1 40%", marginRight: "1rem", marginTop: "1rem" }
-    const chipStyle = { color: "#FFFFFB", backgroundColor: "#BDC0BA", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".75rem", margin: ".1rem .2rem .1rem 0" }
+    const chipStyle = { color: "#1C1C1C", fontFamily: "WeeklyAlt", fontWeight: 400, fontSize: ".8rem", margin: ".1rem .1rem 0 0" }
 
     return <section className={ styles.container }>
             <h2 className={ styles.title }>Skills</h2>
             <div className={ styles.cardContainer }>
                 <ImageCard image={ "/images/cover6.jpg" } title={ "Main Skills" } style={ cardStyle }>
-                    { mainSkills.map((skill) => <Chip size="small" label={ skill.name } style={ chipStyle } /> ) }
+                    { mainSkills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
                 </ImageCard>
                 <ImageCard image={ "/images/cover2.jpg" } title={ "Sub Skills" } style={ cardStyle }>
-                    { subSkills.map((skill) => <Chip size="small" label={ skill.name } style={ chipStyle } /> ) }
+                    { subSkills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
                 </ImageCard>
             </div>
         </section>

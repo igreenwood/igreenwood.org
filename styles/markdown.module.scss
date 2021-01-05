@@ -1,0 +1,54 @@
+.container{
+    a {
+        color: #1C1C1C;
+        background: transparent;
+        text-decoration: underline;
+        transition: all .2s ease-in-out;
+        font-weight: 200;
+    }
+    
+    a:hover {
+        color: #FFFFFB;
+        background: #BDC0BA;
+        text-decoration: none;
+    }
+
+    p {
+        margin: 2rem 0;
+    }
+
+    ul,
+    ol {
+        margin: 2rem 0;
+        padding-left: 2rem;
+        ul,
+        ol {
+            margin: 0;
+        }
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+        text-align: start;
+        line-height: 140%;
+        font-weight: 400;
+        color: #1C1C1C;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        text-align: start;
+        line-height: 160%;
+        font-weight: 400;
+    }
+
+    img {
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+    }
+}

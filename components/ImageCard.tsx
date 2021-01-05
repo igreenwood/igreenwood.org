@@ -14,23 +14,23 @@ type Props = {
 
 const useStyles = makeStyles({
     root: {
-        minWidth: "320px",
-        height: "320px"
+        minWidth: "260px",
+        height: "260px"
     },
 });
 
 export default function ImageCard({ children, image, title, style }: Props) {
     const classes = useStyles();
-    const cardTitleStyle = {color: "#1C1C1C", backgroundColor: "#FFFFFB", fontFamily: "WeeklyAlt", fontWeight: 500, fontSize: "1.25rem"}
+    const cardTitleStyle = {color: "#1C1C1C", backgroundColor: "#FFFFFB", fontFamily: "WeeklyAlt", fontWeight: 500, fontSize: "1.25rem", margin: ".0 0 .5rem"}
     return <Card className={ classes.root } style={ style }>
     <CardMedia
         component="img"
         alt="Skill Card"
         image={ image }
-        style={{ height: "140px" }}
+        style={{ height: "108px" }}
     />
     <CardContent>
-        <Typography gutterBottom variant="h5" component="h3" style={ cardTitleStyle }>
+        <Typography variant="h5" component="h3" style={ cardTitleStyle }>
             { title }
         </Typography>
         { children }

@@ -6,6 +6,7 @@ import Awards from './Awards'
 import Education from './Education'
 import Contact from './Contact'
 import Careers from './Careers'
+import Container from './Container'
 
 export default function Profile(){
     const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
@@ -30,34 +31,34 @@ export default function Profile(){
             <figure>
                 <img src="/images/cover3.jpg" className={ styles.coverImage }/>
             </figure>
-            <div className={ styles.container }>
+            <Container>
                 <section>
-                    <h1>
-                        <div className={ styles.title }>
-                            <span className={ styles.name } >Issei Aoki</span> is a <br/>Tokyo based software engineer.
-                        </div>
-                        <div className={ styles.description }>
-                            Having backgrounds in media arts, he works as s software engineer to development for launching new businesses.
-                            His greatest strength is his ability for visual programing and UI animations.
-                        </div>
-                    </h1>
-                </section>
-                
-                <Skills/>
+                        <h1>
+                            <div className={ styles.title }>
+                                <span className={ styles.name } >Issei Aoki</span> is a <br/>Tokyo based software engineer.
+                            </div>
+                            <div className={ styles.description }>
+                                Having backgrounds in media arts, he works as s software engineer to development for launching new businesses.
+                                His greatest strength is his ability for visual programing and UI animations.
+                            </div>
+                        </h1>
+                    </section>
+                    
+                    <Skills/>
 
-                <Careers items={ careersItems }/>
+                    <Careers items={ careersItems }/>
 
-                <Awards items={ awardItems }/>
+                    <Awards items={ awardItems }/>
 
-                <Education items={ educationItems }/>
+                    <Education items={ educationItems }/>
 
-                <Contact
-                    githubUrl={ contact.githubUrl }
-                    twitterUrl={ contact.twitterUrl }
-                    linkedInUrl={ contact.linkedInUrl }
-                    email={ contact.email }
-                />
-            </div>
+                    <Contact
+                        githubUrl={ contact.githubUrl }
+                        twitterUrl={ contact.twitterUrl }
+                        linkedInUrl={ contact.linkedInUrl }
+                        email={ contact.email }
+                    />
+            </Container>
         </article>
         
     </>
