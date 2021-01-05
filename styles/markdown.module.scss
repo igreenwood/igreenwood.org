@@ -1,7 +1,6 @@
 .container{
     font-size: 1.25rem;
     font-weight: 400;
-    font-family: 'WeeklyAlt';
     line-height: 180%;
 
     a {
@@ -37,7 +36,6 @@
     }
 
     h2 {
-        font-family: 'WeeklyPro';
         font-size: 2.1rem;
         text-align: start;
         line-height: 140%;
@@ -50,7 +48,6 @@
     }
 
     h3 {
-        font-family: 'WeeklyPro';
         font-size: 1.25rem;
         text-align: start;
         line-height: 160%;
@@ -61,5 +58,19 @@
 
     img {
         width: 30%;
+    }
+
+    code {
+        font-family: "Courier New", Consolas, monospace;
+        background: #F6F6F6; // Syntax highlightのgithubの背景色に合わせる
+        padding-top: .5rem;
+    }
+
+    pre {
+        font-family: "Courier New", Consolas, monospace;
+
+        code{
+            background: transparent;
+        }
     }
 }

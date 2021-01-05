@@ -30,7 +30,6 @@
 }
 
 .title {
-    font-family: 'WeeklyPro';
     font-size: 3rem;
     text-align: start;
     line-height: 140%;
@@ -42,7 +41,6 @@
 .attributes {
     display:block;
     color: #BDC0BA;
-    font-family: "WeeklyPro";
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 160%;

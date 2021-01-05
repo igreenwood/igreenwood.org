@@ -3,7 +3,6 @@
 }
 
 .date{
-    font-family: "Weekly";
     font-weight: 300;
     font-size: 1.25rem;
     text-align: start;
@@ -19,7 +18,6 @@
 }
 
 .title{
-    font-family: "Weekly";
     font-weight: 400;
     font-size: 1.25rem;
     text-align: start;
@@ -27,7 +25,6 @@
 }
 
 .description{
-    font-family: "WeeklyAlt";
     font-weight: 300;
     font-size: 1rem;
     text-align: start;

@@ -17,14 +17,14 @@
 }
 
 .toolbar nav a {
-    font-family: "Weekly";
-    font-weight: 100;
+    font-family: "WeeklyAlt";
+    font-weight: 300;
     font-size: 1.25rem;
     margin: 0 1rem;
 }
 
 .toolbarTitle a{
-    font-family: "WeeklyPro";
+    font-family: "WeeklyAlt";
     font-weight: 300;
     font-size: 1.25rem;
     font-weight: 400;
