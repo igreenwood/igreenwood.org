@@ -7,6 +7,7 @@ import Education from './Education'
 import Contact from './Contact'
 import Careers from './Careers'
 import Container from './Container'
+import commonStyles from '../styles/utils.module.css'
 
 export default function Profile(){
     const contact = { githubUrl: "https://github.com/igreenwood", twitterUrl: "https://twitter.com/_igreenwood", linkedInUrl: "https://www.linkedin.com/in/issei-aoki-a8876019a/", email: "i.greenwood.dev@gmail.com" }
@@ -34,8 +35,8 @@ export default function Profile(){
             <Container>
                 <section>
                         <h1>
-                            <div className={ styles.title }>
-                                <span className={ styles.name } >Issei Aoki</span> is a <br/>Tokyo based software engineer.
+                            <div className={ commonStyles.headingL }>
+                                <span className={ styles.name } >Issei Aoki</span> is a Tokyo based <br/>software engineer.
                             </div>
                             <div className={ styles.description }>
                                 Having backgrounds in media arts, he works as s software engineer to development for launching new businesses.
