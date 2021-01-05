@@ -8,6 +8,8 @@ export type User = {
   id: number
   name: string
 }
+
+
 export type Timeline = {
   id: number
   date: string
@@ -30,6 +32,10 @@ export type Project = {
   videoUrl?: string
 }
 
+export type ProjectData = {
+  projects: Project[]
+}
+
 export type PostData = { 
   id: string
   title: string
@@ -48,4 +54,34 @@ export type Skill = {
 export type SkillData = {
   mainSkills: Skill[]
   subSkills: Skill[]
+}
+
+export type ContactData = {
+  githubUrl: string
+  twitterUrl: string
+  linkedInUrl: string
+  email: string
+}
+
+export type CareerData = {
+  timelines: Timeline[]
+}
+
+export type AwardData = {
+  timelines: Timeline[]
+}
+
+export type EducationData = {
+  timelines: Timeline[]
+}
+
+export type ProfileData = {
+  name: string
+  job: string
+  description: string
+  skillData: SkillData
+  careerData: CareerData
+  awardData: AwardData
+  educationData: EducationData
+  contactData: ContactData
 }

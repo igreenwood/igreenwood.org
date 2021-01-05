@@ -1,9 +1,22 @@
-import Link from 'next/link'
 import Layout from '../components/Layout'
 import Profile from '../components/Profile'
+import { ProfileData } from '../interfaces'
+import { profileData } from '../utils/local-data'
 
-export default function InfoPage() {
+type Props = {
+    profileData: ProfileData
+}
+
+export default function InfoPage({ profileData }: Props) {
     return <Layout>
-        <Profile/>
+        <Profile data={profileData}/>
     </Layout>
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            profileData: profileData
+        }
+    }
 }

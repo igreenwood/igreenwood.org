@@ -1,22 +1,22 @@
 import Layout from '../components/Layout'
 import Projects from '../components/Projects'
-import { Project } from '../interfaces'
-import { projects as projectData} from '../utils/local-data'
+import { ProjectData } from '../interfaces'
+import { projectData as data } from '../utils/local-data'
 
 type Props = {
-  projects: Project[]
+  data: ProjectData
 }
 
-export default function ProjectsPage({ projects }: Props) {
+export default function ProjectsPage({ data }: Props) {
   return <Layout>
-    <Projects projects={ projects }/>
+    <Projects data={ data }/>
   </Layout>
 }
 
 export async function getStaticProps() {
   return {
     props: {
-      projects: projectData
+      data: data
     }
   }
 }

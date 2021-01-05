@@ -1,22 +1,20 @@
 import styles from './Contact.module.css'
 import ExternalLink from './ExternalLink'
 import commonStyles from '../styles/utils.module.css'
+import { ContactData } from '../interfaces'
 
 type Props = {
-    githubUrl: string
-    twitterUrl: string
-    linkedInUrl: string
-    email: string
+    data: ContactData
 }
 
-export default function Contact({ githubUrl, twitterUrl, linkedInUrl, email }: Props) {
+export default function Contact({ data }: Props) {
     return <section className={commonStyles.topMarginedSection}>
         <h2 className={ commonStyles.headingL }>Contact</h2>
         <p className={ styles.contents }>
-            <ExternalLink href = { githubUrl } label="Github" />
-            <ExternalLink href = { twitterUrl } label="Twitter" />
-            <ExternalLink href = { linkedInUrl } label="LinkedIn" />
-            <ExternalLink href = { `mailto:${ email }` } label="Email" />
+            <ExternalLink href = { data.githubUrl } label="Github" />
+            <ExternalLink href = { data.twitterUrl } label="Twitter" />
+            <ExternalLink href = { data.linkedInUrl } label="LinkedIn" />
+            <ExternalLink href = { `mailto:${ data.email }` } label="Email" />
         </p>
     </section>
 }
