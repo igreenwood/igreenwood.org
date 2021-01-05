@@ -6,7 +6,7 @@
 .fixedRatioWrapper::before {
     content: "";
     display: block;
-    padding-top: 12.5%;
+    padding-top: 8.33%;
 }
 
 .imageContainer {

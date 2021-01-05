@@ -12,7 +12,11 @@ export default function Posts({ postsData }: Props) {
     
     return <article>
             <figure>
-                <img src="/images/cover7.jpg" className={ styles.coverImage }/>
+                <div className={ styles.fixedRatioWrapper }>
+                    <div className={ styles.imageContainer }>
+                        <img className={ styles.coverImage }src="/images/cover7.jpg"/>
+                    </div>
+                </div>
             </figure>
             <Container>
                 <h1 className={`${commonStyles.headingL} ${styles.title}`}>Posts</h1>
