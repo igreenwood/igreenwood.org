@@ -5,7 +5,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import styles from './PostDetail.module.css'
 import Container from './Container'
-// import markdownStyles from '../styles/markdown.module.scss'
+import markdownStyles from '../styles/markdown.module.scss'
 
 type RendererProps = {
     language: string
@@ -35,10 +35,9 @@ export default function PostDetail({ postData }: Props){
                 <Date dateString={ postData.date }/>
                 <h1>{ postData.title }</h1>
                 <span>{ postData.tags }</span>
-                {/* <div className={markdownStyles.container}>
+                <div className={markdownStyles.container}>
                     <ReactMarkdown source={postData.markdownText} renderers={{code: Renderer}}/>
-                </div> */}
-                <ReactMarkdown source={postData.markdownText} renderers={{code: Renderer}}/>
+                </div>
             </Container>
     </article>
 }
