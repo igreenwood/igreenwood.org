@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import Projects from '../components/Projects'
 import { ProjectData } from '../interfaces'
-import { projectData as data } from '../utils/local-data'
+import { getProjects } from '../utils/graphcms'
 
 type Props = {
   data: ProjectData
@@ -14,9 +14,11 @@ export default function ProjectsPage({ data }: Props) {
 }
 
 export async function getStaticProps() {
+  const { data } = await getProjects()
+  const projectData = data as ProjectData
   return {
     props: {
-      data: data
+      data: projectData
     }
   }
 }

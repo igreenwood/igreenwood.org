@@ -15,7 +15,7 @@ export default function Projects({ data }: Props) {
             } else {
                 classNameString = styles.item
             }
-            return <li key={ project.id } className={ classNameString }><ProjectItem data={ project }/></li>
+            return <li key={ project.id } className={ classNameString }><ProjectItem project={ project }/></li>
         }
     )
     return <ul className={ styles.container }>{ items }</ul>

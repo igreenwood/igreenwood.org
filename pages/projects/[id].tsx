@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout'
-import { projectData } from '../../utils/local-data'
-import { Project } from '../../interfaces'
+import { getProjects } from '../../utils/graphcms'
+import { Project, ProjectData } from '../../interfaces'
 import ProjectDetail from '../../components/ProjectDetail'
 
 type Props = {
@@ -23,6 +23,8 @@ export default function ProjectPage({ project, errors }: Props) {
 }
 
 export async function getStaticPaths() {
+    const { data } = await getProjects()
+    const projectData = data as ProjectData
     const paths = projectData.projects.map((project) => ({ params: { id: project.name } }))
 
     return {
@@ -33,6 +35,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
     try{
+        const { data } = await getProjects()
+        const projectData = data as ProjectData
         const project = projectData.projects.find(project => project.name == params?.id)
         return { props: { project }}
     } catch(e){

@@ -3,20 +3,20 @@ import styles from './ProjectItem.module.css'
 import Link from 'next/link'
 
 type Props = {
-    data: Project
+    project: Project
 }
 
-export default function ProjectItem({ data }: Props) {
+export default function ProjectItem({ project }: Props) {
     return <article>
-        <Link href="/projects/[id]" as={ `/projects/${data.name}` }>
+        <Link href="/projects/[id]" as={ `/projects/${project.name}` }>
             <a className={ styles.touchHandler }>
                 <div className={ styles.fixedRatioWrapper }>
                     <section className={ styles.container }>
                         <figure>
-                            <img className={ styles.image } src={ data.coverImageUrl } alt={ data.title }/>
+                            <img className={ styles.image } src={ project.coverImageUrl.url } alt={ project.title }/>
                             <div className={ styles.overlayContainer }>
-                                <h2 className={ styles.title }>{ data.title }</h2>
-                                <p className={ styles.genre }>{ data.genre }</p>
+                                <h2 className={ styles.title }>{ project.title }</h2>
+                                <p className={ styles.genre }>{ project.genre }</p>
                             </div>
                         </figure>
                     </section>

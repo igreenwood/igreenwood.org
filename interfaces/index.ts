@@ -8,16 +8,26 @@ export type Timeline = {
 
 export type Genre = "Android Application" | "iOS Application" | "Android OSS Library" | "Writing" | "Website"
 
+export type ImageUrl = {
+  url: string
+  width?: number
+  height?: null
+}
+
 export type Project = {
-  id: number
+  id: string
   name: string
   date: string
   title: string
   description: string
   genre: Genre
   part: string
-  coverImageUrl: string
-  videoUrl?: string
+  coverImageUrl: ImageUrl
+  note: string
+  tools: string
+  links: string[]
+  imageUrls?: ImageUrl[]
+  videoUrls?: ImageUrl[]
 }
 
 export type ProjectData = {
