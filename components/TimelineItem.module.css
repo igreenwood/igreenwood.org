@@ -40,7 +40,7 @@
     }
     
     .date{
-        width: 120px;
+        width: 100px;
         float: left;
     }
 
@@ -52,7 +52,7 @@
     .content{
         width: 70%;
         float: left;
-        border-left: 3px #BDC0BA solid;
+        border-left: 1px #BDC0BA solid;
         padding-left:  30px;
         margin-top: 0;
     }
