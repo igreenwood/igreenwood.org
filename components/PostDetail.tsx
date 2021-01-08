@@ -23,6 +23,7 @@ type Props = {
 }
 
 export default function PostDetail({ postData }: Props){
+    const tagString = postData.tags.map((tag) => tag.name).reduce((name1, name2) => `${name1}, ${name2}`)
     return <article>
             <figure>
                 <div className={ styles.fixedRatioWrapper }>
@@ -34,7 +35,7 @@ export default function PostDetail({ postData }: Props){
             <Container>
                 <h1 className={styles.title}>{ postData.title }</h1>
                 <div className={styles.attributes}>
-                    <span><Date dateString={ postData.date }/></span><span className={styles.tags}>CATEGORY: { postData.tags }</span>
+                    <span><Date dateString={ postData.date }/></span><span className={styles.tags}>CATEGORY: { tagString }</span>
                 </div>
                 <div className={markdownStyles.container}>
                     <ReactMarkdown source={postData.markdownText} renderers={{code: Renderer}}/>

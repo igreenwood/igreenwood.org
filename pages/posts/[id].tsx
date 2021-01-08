@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout'
 import { PostData } from '../../interfaces'
-import { getAllPostIds, getPostData } from '../../utils/post-util'
 import PostDetail from '../../components/PostDetail'
+import { getPosts } from '../../utils/graphcms'
 
 type Props = {
     postData?: PostData
@@ -23,7 +23,9 @@ export default function PostDetailPage({ postData, errors}: Props){
 }
 
 export async function getStaticPaths() {
-    const paths = await getAllPostIds()
+    const { data } = await getPosts()
+    const posts = data.posts as PostData[]
+    const paths = posts.map((post) => ({ params: { id: post.fileName }}))
     return {
         paths,
         fallback: false
@@ -31,10 +33,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-    const postData = await getPostData(params.id)
-    return {
-        props: {
-            postData
-        }
+    try{
+        const { data } = await getPosts()
+        const posts = data.posts as PostData[]
+        const postData = posts.find((post) => post.fileName == params?.id)
+        return { props: { postData }}
+    } catch(e) {
+        return { props: { errors: e.message }}
     }
+
 }

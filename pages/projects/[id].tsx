@@ -25,7 +25,7 @@ export default function ProjectPage({ project, errors }: Props) {
 export async function getStaticPaths() {
     const { data } = await getProjects()
     const projectData = data as ProjectData
-    const paths = projectData.projects.map((project) => ({ params: { id: project.name } }))
+    const paths = projectData.projects.map((project) => ({ params: { id: project.name }}))
 
     return {
         paths,

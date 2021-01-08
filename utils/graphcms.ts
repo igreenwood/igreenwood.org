@@ -118,3 +118,23 @@ export async function getProfile(){
         query: GET_PROFILE
     })
 }
+
+const GET_POSTS = gql`
+    query GetPosts {
+        posts(orderBy: date_DESC) {
+            date
+            fileName
+            markdownText
+            title
+            tags {
+                name
+            }
+        }
+    }
+`
+
+export async function getPosts(){
+    return graphcmsClient.query({
+        query: GET_POSTS
+    })
+}

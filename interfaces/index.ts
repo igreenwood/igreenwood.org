@@ -39,11 +39,15 @@ export type ProjectData = {
 }
 
 export type PostData = { 
-  id: string
+  fileName: string
   title: string
   date: string
-  tags: string
+  tags: Tag[]
   markdownText:string
+}
+
+export type Tag = {
+  name: string
 }
 
 export type SkillCategory = "programming" | "design" | "other"

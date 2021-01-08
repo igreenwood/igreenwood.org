@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout'
 import { PostData } from '../../interfaces'
-import getSortedPostsData from '../../utils/post-util'
 import Posts from '../../components/Posts'
+import { getPosts } from '../../utils/graphcms'
 
 type Props = {
     postsData: PostData[]
@@ -14,7 +14,8 @@ export default function PostsPage({ postsData }: Props){
 }
 
 export async function getStaticProps() {
-    const allPostsData: PostData[] = await getSortedPostsData()
+    const { data } = await getPosts()
+    const allPostsData = data.posts as PostData[]
     return {
         props: {
             postsData: allPostsData
