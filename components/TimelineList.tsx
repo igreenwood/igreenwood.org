@@ -1,13 +1,23 @@
 import styles from './TimelineList.module.css'
-import { Timeline } from '../interfaces'
+import { Timeline, TimelineWrapper } from '../interfaces'
 import TimelineItem from './TimelineItem'
 
 type Props = {
     items: Timeline[]
 }
 
-export default function TimelineList({ items = [{ id: 1, date: "2020", title: "title", description: "description", hideDate: false }] }: Props) {
+export default function TimelineList({ items }: Props) {
+    // dateが同じ場合最初のものだけを表示する
+    let wrappers: TimelineWrapper[] = new Array()
+    let lastDate = ""
+    for(let item of items) {
+        let showDate = true
+        if(item.date == lastDate){
+            showDate = false
+        }
+        wrappers.push({ timeline: item, showDate: showDate })
+    }
     return <ul className={ styles.list }>
-        { items.map((item: Timeline) => <li key={ item.id }><TimelineItem id={ item.id } date={ item.date } title={item.title} description={ item.description } hideDate={ item.hideDate } /></li>) }
+        { wrappers.map((item: TimelineWrapper) => <li key={ item.timeline.index }><TimelineItem timeline={item.timeline} showDate={ item.showDate } /></li>) }
     </ul>
 }

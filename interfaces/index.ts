@@ -1,9 +1,13 @@
 export type Timeline = {
-  id: number
+  index: number
   date: string
   title: string
   description: string
-  hideDate: boolean
+}
+
+export type TimelineWrapper = {
+  timeline: Timeline
+  showDate: boolean
 }
 
 export type Genre = "Android Application" | "iOS Application" | "Android OSS Library" | "Writing" | "Website"
@@ -46,12 +50,20 @@ export type SkillCategory = "programming" | "design" | "other"
 
 export type Skill = {
   name: string
-  category: SkillCategory
+  category: string
+}
+
+export type MainSkill = {
+  skills: Skill[]
+}
+
+export type SubSkill = {
+  skills: Skill[]
 }
 
 export type SkillData = {
-  mainSkills: Skill[]
-  subSkills: Skill[]
+  mainSkill: MainSkill
+  subSkill: SubSkill
 }
 
 export type ContactData = {

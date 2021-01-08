@@ -58,3 +58,63 @@ export async function getProjects(){
         query: GET_PROJECTS
     })
 }
+
+const GET_PROFILE = gql`
+    query GetProfile {
+        profile(where: { id: "ckjnn6eb4pyba0b96r049itia" } ) {
+            awardData {
+                timelines {
+                    date
+                    description
+                    index
+                    title
+                }
+            }
+            careerData {
+                timelines {
+                    date
+                    description
+                    title
+                    index
+                }
+            }
+            contactData {
+                githubUrl
+                email
+                linkedInUrl
+                twitterUrl
+            }
+            description
+            educationData {
+                timelines {
+                    date
+                    description
+                    title
+                    index
+                }
+            }
+            job
+            name
+            skillData {
+                mainSkill {
+                    skills {
+                        name
+                        category
+                    }
+                }
+                subSkill {
+                    skills {
+                        name
+                        category
+                    }
+                }
+            }
+        }
+    }
+`
+
+export async function getProfile(){
+    return graphcmsClient.query({
+        query: GET_PROFILE
+    })
+}

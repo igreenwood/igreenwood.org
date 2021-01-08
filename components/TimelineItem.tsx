@@ -1,26 +1,26 @@
 import styles from './TimelineItem.module.css'
-import { Timeline } from '../interfaces'
+import { TimelineWrapper } from '../interfaces'
 
-export default function TimelineItem({ id, date, title, description="", hideDate=false }: Timeline) {
+export default function TimelineItem({ timeline, showDate }: TimelineWrapper) {
 
     let dateClassName: string
     
-    if(hideDate){
-        dateClassName = `${ styles.date } ${styles.hidden }`
-    } else {
+    if(showDate){
         dateClassName = styles.date
+    } else {
+        dateClassName = `${ styles.date } ${styles.hidden }`
     }
 
     return <section className={ styles.container }>
         <p className={ dateClassName }>
-            { date }
+            { timeline.date }
         </p>
         <div className={ styles.content }>
             <h3 className={styles.title}>
-                { title }
+                { timeline.title }
             </h3>
             <p className={ styles.description }>
-                { description }
+                { timeline.description }
             </p>
         </div>
     </section>

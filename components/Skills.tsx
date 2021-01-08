@@ -18,10 +18,10 @@ export default function Skills({ data }: Props){
             <h2 className={ commonStyles.headingL }>Skills</h2>
             <div className={ styles.cardContainer }>
                 <ImageCard key="mainSkill" image={ "/images/cover6.jpg" } title={ "Main Skills" } style={ cardStyle }>
-                    { data.mainSkills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
+                    { data.mainSkill.skills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
                 </ImageCard>
                 <ImageCard key="subSkill" image={ "/images/cover2.jpg" } title={ "Sub Skills" } style={ cardStyle }>
-                    { data.subSkills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
+                    { data.subSkill.skills.map((skill) => <Chip variant="outlined" size="small" label={ skill.name } style={ chipStyle } /> ) }
                 </ImageCard>
             </div>
         </section>
