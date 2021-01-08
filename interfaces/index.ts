@@ -54,7 +54,7 @@ export type SkillCategory = "programming" | "design" | "other"
 
 export type Skill = {
   name: string
-  category: string
+  category: SkillCategory
 }
 
 export type MainSkill = {
