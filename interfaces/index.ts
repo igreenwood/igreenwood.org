@@ -26,6 +26,7 @@ export type Project = {
   description: string
   genre: Genre
   part: string
+  squareImageUrl: ImageUrl
   coverImageUrl: ImageUrl
   note: string
   tools: string
