@@ -1,6 +1,6 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
-import { gql, useLazyQuery } from '@apollo/client'
+import { gql } from '@apollo/client'
 
 const httpLink = createHttpLink({
     uri: 'https://api-ap-northeast-1.graphcms.com/v2/ckjjyxr27duxq01z962dk4f57/master'
