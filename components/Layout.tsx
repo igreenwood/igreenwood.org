@@ -15,6 +15,8 @@ export default function Layout({ children, title = 'igreenwood.com' }: Props) {
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.jpg"/>
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
 
         <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Thin.ttf" as="font" crossOrigin=""/>
