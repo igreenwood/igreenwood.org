@@ -8,7 +8,7 @@ type Props = {
   title?: string
 }
 
-export default function Layout({ children, title = 'igreenwood.com' }: Props) {
+export default function Layout({ children, title = 'igreenwood.org' }: Props) {
   return (
     <div className= { styles.container }>
       <Head>
