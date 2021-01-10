@@ -14,8 +14,12 @@ export type Genre = "Android Application" | "iOS Application" | "Android OSS Lib
 
 export type ImageUrl = {
   url: string
-  width?: number
-  height?: null
+  width: number
+  height: number
+}
+
+export type VideoUrl = {
+  url: string
 }
 
 export type Project = {
@@ -32,7 +36,7 @@ export type Project = {
   tools: string
   links: string[]
   imageUrls?: ImageUrl[]
-  videoUrls?: ImageUrl[]
+  videoUrls?: VideoUrl[]
 }
 
 export type ProjectData = {
