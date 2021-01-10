@@ -54,6 +54,11 @@ query GetProjects {
             width
             height
         }
+        posterUrl {
+            url
+            width
+            height
+        }
     }
 }
 `

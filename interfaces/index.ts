@@ -37,6 +37,7 @@ export type Project = {
   links: string[]
   imageUrls?: ImageUrl[]
   videoUrls?: VideoUrl[]
+  posterUrl?: ImageUrl
 }
 
 export type ProjectData = {

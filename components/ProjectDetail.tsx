@@ -68,7 +68,7 @@ export default function ProjectDetail({ project, showModal }: Props) {
                 <div className={`${commonStyles.topMarginedSection} ${styles.videoContainer}`}>
                     {
                         project.videoUrls?.map((videoUrl) => {
-                            return <video src={videoUrl.url} className={styles.video} preload="none" controls loop autoPlay muted playsInline/>
+                            return <video src={videoUrl.url} className={styles.video} preload="none" controls loop autoPlay muted playsInline poster={project.posterUrl?.url}/>
                         })[0]
                     }
                 </div>
