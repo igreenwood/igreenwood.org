@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Profile from '../components/Profile'
-import { ProfileData } from '../interfaces'
+import { OgData, ProfileData } from '../interfaces'
+import { siteUrl } from '../utils/constants'
 import { getProfile } from '../utils/graphcms'
 
 type Props = {
@@ -8,7 +9,13 @@ type Props = {
 }
 
 export default function InfoPage({ profileData }: Props) {
-    return <Layout>
+    const ogData: OgData = {
+        title: "Issei Aoki | Info",
+        type: "website",
+        url: `${siteUrl}/info`,
+        image: "/images/cover3.jpg"
+    }
+    return <Layout ogData={ogData}>
         <Profile data={profileData}/>
     </Layout>
 }

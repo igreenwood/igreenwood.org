@@ -100,3 +100,12 @@ export type ProfileData = {
   educationData: EducationData
   contactData: ContactData
 }
+
+export type OgData = {
+  title: string
+  type: OgType
+  url: string
+  image: string
+}
+
+export type OgType = "website" | "article"

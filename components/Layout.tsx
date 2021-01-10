@@ -2,18 +2,40 @@ import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import styles from './Layout.module.css'
+import { OgData } from '../interfaces'
 
 type Props = {
   children?: ReactNode
   title?: string
+  ogData?: OgData
 }
 
-export default function Layout({ children, title = 'igreenwood.org' }: Props) {
+export default function Layout(
+  { children,
+    title = 'igreenwood.org',
+    ogData={ 
+      title:"Issei Aoki",
+      type: "website",
+      url: "https://www.igreenwood.org",
+      image: "/images/cover5.jpg"
+    } 
+  }: Props
+  ) {
+  const siteName = "igreenwood.org"
+  const description = "Issei Aoki is Tokyo based software engineer."
   return (
     <div className= { styles.container }>
       <Head>
+      <meta charSet="utf-8" />
         <title>{title}</title>
-        <meta charSet="utf-8" />
+        <meta name="description" content={description}/>
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:description" content={description} />
+        <meta property="og:title" content={ogData.title} />
+        <meta property="og:type" content={ogData.type} />
+        <meta property="og:url" content={ogData.url} />
+        <meta property="og:image" content={ogData.image} />
+        
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.jpg"/>

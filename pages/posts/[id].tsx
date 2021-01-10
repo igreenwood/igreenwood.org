@@ -2,6 +2,8 @@ import Layout from '../../components/Layout'
 import { PostData } from '../../interfaces'
 import PostDetail from '../../components/PostDetail'
 import { getPosts } from '../../utils/graphcms'
+import { siteUrl } from '../../utils/constants'
+import { OgData } from '../../interfaces'
 
 type Props = {
     postData?: PostData
@@ -17,7 +19,14 @@ export default function PostDetailPage({ postData, errors}: Props){
         )
     }
 
-    return <Layout>
+    const ogData: OgData = {
+        title: `${postData?.title} | Issei Aoki`,
+        type: "article",
+        url: `${siteUrl}/posts/${postData?.fileName}`,
+        image: "/images/cover7.jpg"
+    }
+
+    return <Layout ogData={ogData}>
         { postData && <PostDetail postData={ postData }/> }
     </Layout>
 }

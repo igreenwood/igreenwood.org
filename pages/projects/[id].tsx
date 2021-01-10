@@ -2,6 +2,8 @@ import Layout from '../../components/Layout'
 import { getProjects } from '../../utils/graphcms'
 import { Project, ProjectData } from '../../interfaces'
 import ProjectDetail from '../../components/ProjectDetail'
+import { siteUrl } from '../../utils/constants'
+import { OgData } from '../../interfaces'
 
 type Props = {
     project?: Project
@@ -9,7 +11,7 @@ type Props = {
 }
 
 export default function ProjectPage({ project, errors }: Props) {
-    if (errors) {
+    if (errors || project == undefined) {
         return (
             <Layout>
                 <p>{ errors }</p>
@@ -17,7 +19,14 @@ export default function ProjectPage({ project, errors }: Props) {
         )
     }
 
-    return <Layout>
+    const ogData: OgData = {
+        title: `${project.title} | Issei Aoki`,
+        type: "article",
+        url: `${siteUrl}/posts/${project.name}`,
+        image: project.coverImageUrl.url
+    }
+
+    return <Layout ogData={ogData}>
         { project && <ProjectDetail project={ project }/> }
     </Layout>
 }
