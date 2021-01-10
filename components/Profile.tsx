@@ -16,7 +16,7 @@ type Props = {
 export default function Profile({ data }: Props){
     return <article>
     <figure>
-        <img src="/images/cover3.jpg" className={ styles.coverImage }/>
+        <img src="/images/cover3.jpg" className={ styles.coverImage } loading="lazy"/>
     </figure>
     <Container>
         <section>

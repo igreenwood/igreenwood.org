@@ -16,7 +16,7 @@ export default function ProjectDetail({ project }: Props) {
         <figure>
             <div className={ styles.fixedRatioWrapper }>
                 <div className={ styles.imageContainer }>
-                    <img className={ styles.coverImage } src={ project.coverImageUrl.url }/>
+                    <img className={ styles.coverImage } src={ project.coverImageUrl.url } loading="lazy"/>
                 </div>
             </div>
         </figure>

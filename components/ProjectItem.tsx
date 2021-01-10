@@ -13,7 +13,7 @@ export default function ProjectItem({ project }: Props) {
                 <div className={ styles.fixedRatioWrapper }>
                     <section className={ styles.container }>
                         <figure>
-                            <img className={ styles.image } src={ project.squareImageUrl.url } alt={ project.title }/>
+                            <img className={ styles.image } src={ project.squareImageUrl.url } alt={ project.title } loading="lazy"/>
                             <div className={ styles.overlayContainer }>
                                 <h2 className={ styles.title }>{ project.title }</h2>
                                 <p className={ styles.genre }>{ project.genre }</p>

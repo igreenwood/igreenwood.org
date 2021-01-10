@@ -10,7 +10,7 @@ export default function ImageGrid({ imageUrl }: Props){
                 <div className={ styles.fixedRatioWrapper }>
                     <section className={ styles.container }>
                         <figure>
-                            <img className={ styles.image } src={ imageUrl.url }/>
+                            <img className={ styles.image } src={ imageUrl.url } loading="lazy"/>
                         </figure>
                     </section>
                 </div>

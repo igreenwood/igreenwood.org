@@ -28,7 +28,7 @@ export default function PostDetail({ postData }: Props){
             <figure>
                 <div className={ styles.fixedRatioWrapper }>
                     <div className={ styles.imageContainer }>
-                        <img className={ styles.coverImage }src="/images/cover7.jpg"/>
+                        <img className={ styles.coverImage }src="/images/cover7.jpg" loading="lazy"/>
                     </div>
                 </div>
             </figure>
