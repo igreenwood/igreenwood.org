@@ -3,7 +3,9 @@ import { getProjects } from '../../utils/graphcms'
 import { Project, ProjectData } from '../../interfaces'
 import ProjectDetail from '../../components/ProjectDetail'
 import { siteUrl } from '../../utils/constants'
-import { OgData } from '../../interfaces'
+import { OgData, ImageUrl } from '../../interfaces'
+import { useState } from 'react'
+import ImageViewer  from '../../components/ImageViewer'
 
 type Props = {
     project?: Project
@@ -26,9 +28,41 @@ export default function ProjectPage({ project, errors }: Props) {
         image: project.coverImageUrl.url
     }
 
+    const [ isModalVisible, setModalVisible ] = useState(false)
+    const [ selectedImageUrl, setSelectedImageUrl ] = useState<ImageUrl>({ url: "", width: 0, height: 0 })
+
+    function showModal(imageUrl: ImageUrl) {
+        setModalVisible(true)
+        setSelectedImageUrl(imageUrl)
+        offsetBody()
+    }
+
+    function hideModal(){
+        setModalVisible(false)
+        restoreBody()
+    }
+
+    // TODO ちゃんと動いてない
+    function offsetBody(){
+        console.log(`offsetBody: scrollY = ${window.scrollY}`)
+        // document.body.style.position = "fixed"
+        document.body.style.top = `-${window.scrollY}px`
+    }
+
+    // TODO ちゃんと動いてない
+    function restoreBody(){
+        const scrollY = document.body.style.top
+        // document.body.style.position = ''
+        document.body.style.top = ''
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+    }
+
     return <Layout ogData={ogData}>
-        { project && <ProjectDetail project={ project }/> }
-    </Layout>
+        <>
+            { project && <ProjectDetail project={project} showModal={showModal}/> }
+            <ImageViewer isVisible={isModalVisible} imageUrl={selectedImageUrl} hideModal={hideModal}/>
+        </>
+</Layout>
 }
 
 export async function getStaticPaths() {

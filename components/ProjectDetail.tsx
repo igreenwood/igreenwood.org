@@ -4,13 +4,19 @@ import Container from './Container'
 import commonStyles from '../styles/utils.module.css'
 import { format } from '../utils/date-util'
 import ImageGrid from './ImageGrid'
+import { ImageUrl } from '../interfaces'
 
 type Props = {
     project: Project
+    showModal: (imageUrl: ImageUrl) => void
 }
 
-export default function ProjectDetail({ project }: Props) {
+export default function ProjectDetail({ project, showModal }: Props) {
     const parsedDate = format({ dateString: project.date })
+
+    function onImageClicked(imageUrl: ImageUrl){
+        showModal(imageUrl)
+    }
 
     return <article>
         <figure>
@@ -46,7 +52,7 @@ export default function ProjectDetail({ project }: Props) {
                 <div className={commonStyles.topMarginedSection}>
                     <ul className={styles.gridContainer}>{
                         project.imageUrls?.map((imageUrl, index)=> {
-                            return <li key={index} className={styles.grid}><ImageGrid imageUrl={imageUrl}/></li>
+                            return <li key={index} className={styles.grid}><a href="#" onClick={() => onImageClicked(imageUrl)}><ImageGrid imageUrl={imageUrl}/></a></li>
                         })
                     }</ul>
                 </div>
