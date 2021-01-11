@@ -42,19 +42,17 @@ export default function ProjectPage({ project, errors }: Props) {
         restoreBody()
     }
 
-    // TODO ちゃんと動いてない
     function offsetBody(){
-        console.log(`offsetBody: scrollY = ${window.scrollY}`)
-        // document.body.style.position = "fixed"
-        document.body.style.top = `-${window.scrollY}px`
+        const offset = window.scrollY
+        document.body.style.position = "fixed"
+        document.body.style.top = `${-offset}px`
     }
 
-    // TODO ちゃんと動いてない
     function restoreBody(){
-        const scrollY = document.body.style.top
-        // document.body.style.position = ''
+        const offset = document.body.style.top
+        document.body.style.position = ''
         document.body.style.top = ''
-        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+        window.scrollTo(0, parseInt(offset || '0') * -1)
     }
 
     return <Layout ogData={ogData}>

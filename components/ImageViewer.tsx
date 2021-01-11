@@ -1,6 +1,5 @@
 import { MouseEvent } from 'react'
 import { ImageUrl } from '../interfaces'
-import commonStyles from '../styles/utils.module.css'
 import styles from './ImageViewer.module.css'
 
 type Props  = {
@@ -14,12 +13,17 @@ export default function ImageViewer({ isVisible, imageUrl, hideModal }: Props){
         return null   
     }
 
-    function onClicked(e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) {
+    function onClicked(e: MouseEvent<HTMLElement, globalThis.MouseEvent>) {
         e.preventDefault()
         hideModal()
     }
 
-    return <div className={commonStyles.modalBackground} onClick={(e)=> onClicked(e)}>
-            <img className={ styles.image } src={ imageUrl.url } loading="lazy"/>
+    return <div className={styles.overlay}>
+        <div className={styles.container}>
+            <img className={styles.image} src={imageUrl.url} loading="lazy"/>
+            <a href="#" className={styles.closeButton} onClick={(e)=> onClicked(e)}>
+                <img src="/icons/close-button.svg"/>
+            </a>
+        </div>
     </div>
 }
