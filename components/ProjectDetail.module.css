@@ -10,8 +10,7 @@
 .fixedRatioWrapper::before {
   content: '';
   display: block;
-  /*  16:9  */
-  padding-top: 56.25%;
+  padding-top: 50%;
 }
 
 .imageContainer {
@@ -29,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   object-fit: cover;
-  object-position: 0% 30%;
+  object-position: 0% 0%;
   width: 100%;
   height: 100%;
 }
