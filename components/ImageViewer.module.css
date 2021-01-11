@@ -1,46 +1,46 @@
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #FFFFFBCC;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffffbcc;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    display: block;
-    position: relative;
-    width: 90%;
-    height: 90%;
-    text-align: center;
-    margin: auto 0;
-    background: #FFFFFB;
-    border: solid 1px #BDC0BA;
-    border-radius: 3px;
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  margin: auto 0;
+  background: #fffffb;
+  border: solid 1px #bdc0ba;
+  border-radius: 3px;
 }
 
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display:block;
-    margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
 .closeButton {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 48px;
-    height: 48px;
-    opacity: 1;
-    background-color: transparent;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+  background-color: transparent;
 }
 
 .closeButton:hover {
-    background-color: transparent;
-    opacity: .5;
+  background-color: transparent;
+  opacity: 0.5;
 }

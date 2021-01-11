@@ -1,70 +1,71 @@
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-Thin.ttf");
-    font-style: normal;
-    font-weight: 100;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-Thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-UltraLight.ttf");
-    font-style: normal;
-    font-weight: 200;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-UltraLight.ttf');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-Light.ttf");
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-Medium.ttf");
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-SemiBold.ttf");
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "WeeklyAlt";
-    src: url("/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
+  font-family: 'WeeklyAlt';
+  src: url('/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-    font-family: "WeeklyAlt", yu-mincho-pr6n, YuMincho, 游明朝, "YuMincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
-    font-weight: 300;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'WeeklyAlt', yu-mincho-pr6n, YuMincho, 游明朝, 'YuMincho',
+    'Yu Mincho', 'Hiragino Mincho ProN', serif;
+  font-weight: 300;
 }
 
 nav {
-    list-style: none;
+  list-style: none;
 }
 
 h1,
@@ -73,22 +74,22 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 a {
-    color: #1C1C1C;
-    background: transparent;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-    font-weight: 200;
+  color: #1c1c1c;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: 200;
 }
 
 a:hover {
-    color: #FFFFFB;
-    background: #BDC0BA;
-    text-decoration: none;
+  color: #fffffb;
+  background: #bdc0ba;
+  text-decoration: none;
 }

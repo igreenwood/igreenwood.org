@@ -1,66 +1,66 @@
 .fixedRatioWrapper {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .fixedRatioWrapper::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
 
 .container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .image {
-    display: flex;
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: .2s ease-in-out;
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 
 .image:hover {
-    opacity: .2;
+  opacity: 0.2;
 }
 
 .overlayContainer {
-    pointer-events: none;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .2s ease-in-out;
+  pointer-events: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in-out;
 }
 
 .image:hover + .overlayContainer {
-    display: block;
+  display: block;
 }
 
 .title {
-    color: #1c1c1c;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    padding-bottom: 1rem;
+  color: #1c1c1c;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .genre {
-    padding-top: 1rem;
-    color: #1c1c1c;
-    font-weight: 500;
-    text-align: center;
-    font-size: 1rem;
+  padding-top: 1rem;
+  color: #1c1c1c;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1rem;
 }

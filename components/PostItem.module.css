@@ -1,12 +1,12 @@
 .attributes {
-    display:block;
-    color: #BDC0BA;
-    font-weight: 700;
-    font-size: .8rem;
-    line-height: 160%;
-    margin-bottom: 2rem;
+  display: block;
+  color: #bdc0ba;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 160%;
+  margin-bottom: 2rem;
 }
 
 .tags {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }

@@ -1,20 +1,22 @@
-import styles from './Contact.module.css'
-import ExternalLink from './ExternalLink'
-import commonStyles from '../styles/utils.module.css'
-import { ContactData } from '../interfaces'
+import styles from './Contact.module.css';
+import ExternalLink from './ExternalLink';
+import commonStyles from '../styles/utils.module.css';
+import { ContactData } from '../interfaces';
 
 type Props = {
-    data: ContactData
-}
+  data: ContactData;
+};
 
 export default function Contact({ data }: Props) {
-    return <section className={commonStyles.marginL}>
-        <h2 className={ commonStyles.headingL }>Contact</h2>
-        <p className={ `${styles.contents} ${commonStyles.marginM}` }>
-            <ExternalLink href = { data.githubUrl } label="Github" />
-            <ExternalLink href = { data.twitterUrl } label="Twitter" />
-            <ExternalLink href = { data.linkedInUrl } label="LinkedIn" />
-            <ExternalLink href = { `mailto:${ data.email }` } label="Email" />
-        </p>
+  return (
+    <section className={commonStyles.marginL}>
+      <h2 className={commonStyles.headingL}>Contact</h2>
+      <p className={`${styles.contents} ${commonStyles.marginM}`}>
+        <ExternalLink href={data.githubUrl} label="Github" />
+        <ExternalLink href={data.twitterUrl} label="Twitter" />
+        <ExternalLink href={data.linkedInUrl} label="LinkedIn" />
+        <ExternalLink href={`mailto:${data.email}`} label="Email" />
+      </p>
     </section>
+  );
 }

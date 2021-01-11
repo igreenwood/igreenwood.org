@@ -1,76 +1,76 @@
-.container{
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 180%;
+.container {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 180%;
 
-    a {
-        color: #1C1C1C;
-        background: transparent;
-        text-decoration: underline;
-        transition: all .2s ease-in-out;
-        font-weight: 200;
-    }
-    
-    a:hover {
-        color: #FFFFFB;
-        background: #BDC0BA;
-        text-decoration: none;
-    }
+  a {
+    color: #1c1c1c;
+    background: transparent;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+    font-weight: 200;
+  }
 
-    p {
-        margin: 2rem 0;
-    }
+  a:hover {
+    color: #fffffb;
+    background: #bdc0ba;
+    text-decoration: none;
+  }
 
+  p {
+    margin: 2rem 0;
+  }
+
+  ul,
+  ol {
+    margin: 2rem 0;
+    padding-left: 2rem;
     ul,
     ol {
-        margin: 2rem 0;
-        padding-left: 2rem;
-        ul,
-        ol {
-            margin: 0;
-        }
+      margin: 0;
     }
+  }
 
-    li {
-        margin: 1rem 0;
-    }
+  li {
+    margin: 1rem 0;
+  }
 
-    h2 {
-        font-size: 2.1rem;
-        text-align: start;
-        line-height: 140%;
-        font-weight: 600;
-        color: #1C1C1C;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-        padding-bottom: .8rem;
-        border-bottom: thin solid #BDC0BA;
-    }
+  h2 {
+    font-size: 2.1rem;
+    text-align: start;
+    line-height: 140%;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: thin solid #bdc0ba;
+  }
 
-    h3 {
-        font-size: 1.25rem;
-        text-align: start;
-        line-height: 160%;
-        font-weight: 700;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-    }
+  h3 {
+    font-size: 1.25rem;
+    text-align: start;
+    line-height: 160%;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
 
-    img {
-        width: 30%;
-    }
+  img {
+    width: 30%;
+  }
+
+  code {
+    font-family: 'Courier New', Consolas, monospace;
+    background: #f6f6f6; // Syntax highlightのgithubの背景色に合わせる
+    padding-top: 0.5rem;
+  }
+
+  pre {
+    font-family: 'Courier New', Consolas, monospace;
 
     code {
-        font-family: "Courier New", Consolas, monospace;
-        background: #F6F6F6; // Syntax highlightのgithubの背景色に合わせる
-        padding-top: .5rem;
+      background: transparent;
     }
-
-    pre {
-        font-family: "Courier New", Consolas, monospace;
-
-        code{
-            background: transparent;
-        }
-    }
+  }
 }

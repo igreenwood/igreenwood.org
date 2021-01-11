@@ -1,55 +1,55 @@
-.container{
-    padding: .5rem;
-    background-color: #FFFFFB;
+.container {
+  padding: 0.5rem;
+  background-color: #fffffb;
 }
 
 .button,
 .button span {
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    box-sizing: border-box;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 
 .button {
-    position: relative;
-    width: 30px;
-    height: 24px;
-    outline: none;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  outline: none;
 }
 
 .button span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #1C1C1C;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #1c1c1c;
 }
 
-.closed span:nth-of-type(1){
-    top: 0;
+.closed span:nth-of-type(1) {
+  top: 0;
 }
 
-.closed span:nth-of-type(2){
-    top: 12px;
-    width: 100%;
+.closed span:nth-of-type(2) {
+  top: 12px;
+  width: 100%;
 }
 
-.closed span:nth-of-type(3){
-    bottom: 0;
+.closed span:nth-of-type(3) {
+  bottom: 0;
 }
 
-.open span:nth-of-type(1){
-    top: 0;
-    transform: translateY(12px) rotate(-135deg);
+.open span:nth-of-type(1) {
+  top: 0;
+  transform: translateY(12px) rotate(-135deg);
 }
 
-.open span:nth-of-type(2){
-    top: 12px;
-    width: 0%;
-    transform: translateX(15px);
+.open span:nth-of-type(2) {
+  top: 12px;
+  width: 0%;
+  transform: translateX(15px);
 }
 
-.open span:nth-of-type(3){
-    bottom: 0;
-    transform: translateY(-12px) rotate(135deg);
+.open span:nth-of-type(3) {
+  bottom: 0;
+  transform: translateY(-12px) rotate(135deg);
 }

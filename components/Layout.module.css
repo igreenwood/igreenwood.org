@@ -1,100 +1,100 @@
 .container {
-    margin: 0;
-    background-color: #FFFFFB;
+  margin: 0;
+  background-color: #fffffb;
 }
 
 .siteHeader {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 999;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
 }
 
 .toolbarOffset {
-    width: 100%;
-    height:  6rem;
+  width: 100%;
+  height: 6rem;
 }
 
 .toolbar {
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    text-align: baseline;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  text-align: baseline;
 }
 
 .toolbar ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .toolbar nav a {
-    font-family: "WeeklyAlt";
-    font-weight: 300;
-    font-size: 1.25rem;
-    margin: 0 0 0 3rem;
-    background-color: #FFFFFB;
+  font-family: 'WeeklyAlt';
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin: 0 0 0 3rem;
+  background-color: #fffffb;
 }
 
 .toolbar nav a:hover {
-    background-color: #BDC0BA;
+  background-color: #bdc0ba;
 }
 
 .toolbarTitle,
 .toolbarMenu {
-    margin: auto 2rem;
+  margin: auto 2rem;
 }
 
 .normalMenu {
-    display: none;
+  display: none;
 }
 
 .hamburgerMenu {
-    display: block;
+  display: block;
 }
 
-.toolbarTitle a{
-    font-family: "WeeklyAlt";
-    font-weight: 300;
-    font-size: 1.25rem;
-    font-weight: 400;
-    background-color: #FFFFFB;
+.toolbarTitle a {
+  font-family: 'WeeklyAlt';
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 400;
+  background-color: #fffffb;
 }
 
 .toolbarTitle a:hover {
-    background-color: #BDC0BA;
+  background-color: #bdc0ba;
 }
 
 .footer {
-    text-align: end;
+  text-align: end;
 }
 
 .rights {
-    padding: 1rem;
-    font-size: .75rem;
-    font-weight: 300;
+  padding: 1rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
 .hamburgerOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@media(min-width : 560px) {
-    .normalMenu {
-        display: block;
-    }
+@media (min-width: 560px) {
+  .normalMenu {
+    display: block;
+  }
 
-    .hamburgerMenu {
-        display: none;
-    }
+  .hamburgerMenu {
+    display: none;
+  }
 
-    .hamburgerOverlay {
-        display: none;
-    }
+  .hamburgerOverlay {
+    display: none;
+  }
 }
