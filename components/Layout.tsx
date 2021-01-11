@@ -5,6 +5,7 @@ import styles from './Layout.module.css'
 import { OgData } from '../interfaces'
 import HamburgerMenu from './HamburgerMenu'
 import { useState } from 'react'
+import HamburgerOverlay from './HamburgerOverlay'
 
 type Props = {
   children?: ReactNode
@@ -98,6 +99,7 @@ export default function Layout(
           <span>©︎ 2020 igreenwood</span>
         </div>
       </footer>
+      <HamburgerOverlay isVisible={isOpen} onClick={toggleMenu}/>
     </div>
   )
 }
