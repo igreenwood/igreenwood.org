@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from './Layout.module.css'
 import { OgData } from '../interfaces'
+import HamburgerMenu from './HamburgerMenu'
+import { useState } from 'react'
 
 type Props = {
   children?: ReactNode
@@ -23,6 +25,12 @@ export default function Layout(
   ) {
   const siteName = "igreenwood.org"
   const description = "Issei Aoki is Tokyo based software engineer."
+  const [ isOpen, setIsOpen ] = useState(false)
+
+  function toggleMenu(){
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className= { styles.container }>
       <Head>
@@ -52,25 +60,32 @@ export default function Layout(
       </Head>
       <header>
         <div className = { styles.toolbar }>
-          <h1 className ={ styles.toolbarTitle }><Link href="/"><a>{ title }</a></Link></h1>
-          <nav>
-            <ul>
-              <li>
-                <Link href="/">
-                  <a>Projects</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/info">
-                  <a>Info</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/posts">
-                  <a>Posts</a>
-                </Link>
-              </li>
-            </ul>
+          <div className ={ styles.toolbarTitle }>
+            <h1><Link href="/"><a>{ title }</a></Link></h1>
+          </div>
+          <nav className={styles.toolbarMenu}>
+            <div className={styles.normalMenu}>
+              <ul>
+                  <li>
+                    <Link href="/">
+                      <a>Projects</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/info">
+                      <a>Info</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/posts">
+                      <a>Posts</a>
+                    </Link>
+                  </li>
+                </ul>
+            </div>
+            <div className={styles.hamburgerMenu}>
+              <HamburgerMenu isOpen={isOpen} onClick={toggleMenu}/>
+            </div>
           </nav>
         </div>
       </header>

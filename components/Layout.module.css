@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    height: 6rem;
     text-align: baseline;
 }
 
@@ -21,6 +21,19 @@
     font-weight: 300;
     font-size: 1.25rem;
     margin: 0 1rem;
+}
+
+.toolbarTitle,
+.toolbarMenu {
+    margin: auto 2rem;
+}
+
+.normalMenu {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: block;
 }
 
 .toolbarTitle a{
@@ -38,4 +51,14 @@
     padding: 1rem;
     font-size: .75rem;
     font-weight: 300;
+}
+
+@media(min-width : 560px) {
+    .normalMenu {
+        display: block;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
 }
