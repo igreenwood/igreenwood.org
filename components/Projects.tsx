@@ -9,7 +9,7 @@ type Props = {
 export default function Projects({ data }: Props) {
   let classNameString: string = styles.item;
   const items = data.projects.map((project: Project) => {
-    if (project.genre != 'Writing') {
+    if (project.shouldHighlight) {
       classNameString = `${styles.item} ${styles.largeGrid}`;
     } else {
       classNameString = styles.item;

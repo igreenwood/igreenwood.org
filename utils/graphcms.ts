@@ -23,43 +23,40 @@ const graphcmsClient = new ApolloClient({
 
 const GET_PROJECTS =  gql`
 query GetProjects {
-    projects {
-        id
-        name
-        date
-        title
-        description
-        genre
-        part
-        coverImageUrl {
-            url
-            width
-            height
-        }
-        note
-        tools
-        links
-        imageUrls {
-            url
-            width
-            height
-        }
-        videoUrls {
-            url
-            width
-            height
-        }
-        squareImageUrl {
-            url
-            width
-            height
-        }
-        posterUrl {
-            url
-            width
-            height
-        }
+  projects(orderBy: order_ASC) {
+    id
+    name
+    date
+    title
+    description
+    genre
+    part
+    coverImageUrl {
+      url
+      width
+      height
     }
+    note
+    tools
+    links
+    imageUrls {
+      url
+      width
+      height
+    }
+    videoUrls {
+      url
+      width
+      height
+    }
+    squareImageUrl {
+      url
+      width
+      height
+    }
+    order
+    shouldHighlight
+  }
 }
 `
 

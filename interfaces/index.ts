@@ -38,6 +38,8 @@ export type Project = {
   imageUrls?: ImageUrl[]
   videoUrls?: VideoUrl[]
   posterUrl?: ImageUrl
+  order: number
+  shouldHighlight: boolean
 }
 
 export type ProjectData = {
