@@ -12,9 +12,11 @@ export default function HamburgerMenu({ isOpen, onClick }: Props){
     } else {
         className = `${styles.button} ${styles.closed}`
     }
-    return <button type="button" className={className} onClick={()=> onClick()}>
-        <span/>
-        <span/>
-        <span/>
-    </button>
+    return <div className={styles.container}>
+        <button type="button" className={className} onClick={()=> onClick()}>
+            <span/>
+            <span/>
+            <span/>
+        </button>
+    </div>
 }

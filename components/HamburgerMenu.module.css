@@ -1,3 +1,8 @@
+.container{
+    padding: .5rem;
+    background-color: #FFFFFB;
+}
+
 .button,
 .button span {
     display: inline-block;

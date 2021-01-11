@@ -59,35 +59,38 @@ export default function Layout(
         <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf" as="font" crossOrigin=""/>
 
       </Head>
-      <header className={styles.toolbar}>
-        <div className ={ styles.toolbarTitle }>
-            <h1><Link href="/"><a>{ title }</a></Link></h1>
-          </div>
-          <nav className={styles.toolbarMenu}>
-            <div className={styles.normalMenu}>
-              <ul>
-                  <li>
-                    <Link href="/">
-                      <a>Projects</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/info">
-                      <a>Info</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/posts">
-                      <a>Posts</a>
-                    </Link>
-                  </li>
-                </ul>
+      <header className={styles.siteHeader}>
+        <div className={styles.toolbar}>
+            <div className ={ styles.toolbarTitle }>
+              <h1><Link href="/"><a>{ title }</a></Link></h1>
             </div>
-            <div className={styles.hamburgerMenu}>
-              <HamburgerMenu isOpen={isOpen} onClick={toggleMenu}/>
-            </div>
-          </nav>
+            <nav className={styles.toolbarMenu}>
+              <div className={styles.normalMenu}>
+                <ul>
+                    <li>
+                      <Link href="/">
+                        <a>Projects</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/info">
+                        <a>Info</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/posts">
+                        <a>Posts</a>
+                      </Link>
+                    </li>
+                  </ul>
+              </div>
+              <div className={styles.hamburgerMenu}>
+                <HamburgerMenu isOpen={isOpen} onClick={toggleMenu}/>
+              </div>
+            </nav>
+        </div>
       </header>
+      <div className={styles.toolbarOffset}/>
       <main>
         {children}
       </main>
