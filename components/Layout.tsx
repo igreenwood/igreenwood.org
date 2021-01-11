@@ -59,9 +59,8 @@ export default function Layout(
         <link rel="preload" href="/fonts/WeeklyAlt/WeeklyAlt-Bold.ttf" as="font" crossOrigin=""/>
 
       </Head>
-      <header>
-        <div className = { styles.toolbar }>
-          <div className ={ styles.toolbarTitle }>
+      <header className={styles.toolbar}>
+        <div className ={ styles.toolbarTitle }>
             <h1><Link href="/"><a>{ title }</a></Link></h1>
           </div>
           <nav className={styles.toolbarMenu}>
@@ -88,7 +87,6 @@ export default function Layout(
               <HamburgerMenu isOpen={isOpen} onClick={toggleMenu}/>
             </div>
           </nav>
-        </div>
       </header>
       <main>
         {children}
