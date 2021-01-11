@@ -8,9 +8,9 @@ type Props = {
 }
 
 export default function Awards({ data }: Props) {
-    return <section className={commonStyles.topMarginedSection}>
+    return <section className={commonStyles.marginL}>
         <h2 className={ commonStyles.headingL }>Awards</h2>
-        <div className={ styles.container} >
+        <div className={ `${styles.container} ${commonStyles.marginM}`} >
             <TimelineList items={ data.timelines }/>
         </div>
     </section>

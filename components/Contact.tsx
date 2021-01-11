@@ -8,9 +8,9 @@ type Props = {
 }
 
 export default function Contact({ data }: Props) {
-    return <section className={commonStyles.topMarginedSection}>
+    return <section className={commonStyles.marginL}>
         <h2 className={ commonStyles.headingL }>Contact</h2>
-        <p className={ styles.contents }>
+        <p className={ `${styles.contents} ${commonStyles.marginM}` }>
             <ExternalLink href = { data.githubUrl } label="Github" />
             <ExternalLink href = { data.twitterUrl } label="Twitter" />
             <ExternalLink href = { data.linkedInUrl } label="LinkedIn" />

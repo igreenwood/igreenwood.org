@@ -38,6 +38,14 @@
     margin: 3rem auto 2rem;
 }
 
-.topMarginedSection{
+.marginL{
     margin-top: 3rem;
+}
+
+.marginM{
+    margin-top: 2rem;
+}
+
+.marginS{
+    margin-top: 1rem;
 }

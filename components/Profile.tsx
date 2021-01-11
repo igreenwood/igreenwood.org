@@ -29,6 +29,8 @@ export default function Profile({ data }: Props){
                     </div>
                 </h1>
             </section>
+
+            <div className={styles.titleBottomMargin}/>
             
             <Skills data={data.skillData}/>
 

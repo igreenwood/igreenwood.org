@@ -40,7 +40,7 @@ export default function ProjectDetail({ project, showModal }: Props) {
                         <p className={ `${commonStyles.headingM} ${styles.description}` }>{ project.description }</p>
                     </div>
                 </div>
-                <div className={commonStyles.topMarginedSection}>
+                <div className={commonStyles.marginL}>
                     <ul className={styles.linkList}>
                         {
                             project.links?.map((link) => {
@@ -49,14 +49,14 @@ export default function ProjectDetail({ project, showModal }: Props) {
                         }
                     </ul>
                 </div>
-                <div className={commonStyles.topMarginedSection}>
+                <div className={commonStyles.marginL}>
                     <ul className={styles.gridContainer}>{
                         project.imageUrls?.map((imageUrl, index)=> {
                             return <li key={index} className={styles.grid}><a href="#" onClick={() => onImageClicked(imageUrl)}><ImageGrid imageUrl={imageUrl}/></a></li>
                         })
                     }</ul>
                 </div>
-                <div className={commonStyles.topMarginedSection}>
+                <div className={commonStyles.marginL}>
                     <div className={styles.twoColumnBlock}>
                         <div className={ styles.attributesContainer }>
                             <p><span className={styles.attributeLabel}>PART:</span><span className={ `${styles.part} ${styles.attributeBody}` }>{ project.part }</span></p>
@@ -65,7 +65,7 @@ export default function ProjectDetail({ project, showModal }: Props) {
                         <p className={ `${commonStyles.headingM} ${styles.note}` }>{ project.note }</p>
                     </div>
                 </div>
-                <div className={`${commonStyles.topMarginedSection} ${styles.videoContainer}`}>
+                <div className={`${commonStyles.marginL} ${styles.videoContainer}`}>
                     {
                         project.videoUrls?.map((videoUrl) => {
                             return <video src={videoUrl.url} className={styles.video} preload="none" controls loop autoPlay muted playsInline poster={project.posterUrl?.url}/>
