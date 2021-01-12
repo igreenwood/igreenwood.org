@@ -20,7 +20,7 @@ export default function Layout({
     title: 'Issei Aoki',
     type: 'website',
     url: 'https://www.igreenwood.org',
-    image: '/images/cover5.jpg',
+    image: 'https://igreenwood.org/images/cover3.jpg',
   },
 }: Props) {
   const siteName = 'igreenwood.org';
@@ -44,7 +44,10 @@ export default function Layout({
         <meta property="og:url" content={ogData.url} />
         <meta property="og:image" content={ogData.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/cover5.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://igreenwood.org/images/cover3.jpg"
+        />
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
