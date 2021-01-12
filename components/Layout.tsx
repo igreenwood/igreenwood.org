@@ -43,6 +43,8 @@ export default function Layout({
         <meta property="og:type" content={ogData.type} />
         <meta property="og:url" content={ogData.url} />
         <meta property="og:image" content={ogData.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/images/cover5.jpg" />
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
